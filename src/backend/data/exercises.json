@@ -1,0 +1,1669 @@
+[
+ {
+  "id": "remo-con-barra",
+  "name": "Remo con barra",
+  "muscle": "espalda",
+  "pattern": "tiron",
+  "equipment": "barra",
+  "home": false,
+  "video": "https://www.youtube.com/watch?v=kdfnnWWAxNk",
+  "source": "enciclopedia",
+  "tags": []
+ },
+ {
+  "id": "remo-con-mancuernas-pecho-apoyado-en-banco-inclinado",
+  "name": "Remo con mancuernas pecho apoyado en banco inclinado",
+  "muscle": "espalda",
+  "pattern": "tiron",
+  "equipment": "mancuernas",
+  "home": false,
+  "video": "https://www.youtube.com/watch?v=882fVhnh2SY",
+  "source": "enciclopedia",
+  "tags": []
+ },
+ {
+  "id": "remo-en-punta-en-maquina",
+  "name": "Remo en punta en máquina",
+  "muscle": "espalda",
+  "pattern": "tiron",
+  "equipment": "maquina",
+  "home": false,
+  "video": "https://www.youtube.com/watch?v=NGVG3Y1p4VQ",
+  "source": "enciclopedia",
+  "tags": []
+ },
+ {
+  "id": "remo-en-punta-barra-libre",
+  "name": "Remo en punta barra libre",
+  "muscle": "espalda",
+  "pattern": "tiron",
+  "equipment": "barra",
+  "home": false,
+  "video": "https://www.youtube.com/watch?v=3e9mzit5dd0",
+  "source": "enciclopedia",
+  "tags": []
+ },
+ {
+  "id": "remo-con-mancuerna-a-un-brazo",
+  "name": "Remo con mancuerna a un brazo",
+  "muscle": "espalda",
+  "pattern": "tiron",
+  "equipment": "mancuernas",
+  "home": false,
+  "video": "https://www.youtube.com/watch?v=i154-cve6GI",
+  "source": "enciclopedia",
+  "tags": []
+ },
+ {
+  "id": "remo-gironda",
+  "name": "Remo Gironda",
+  "muscle": "espalda",
+  "pattern": "tiron",
+  "equipment": "polea",
+  "home": false,
+  "video": "https://www.youtube.com/watch?v=e98IFQpjL88",
+  "source": "enciclopedia",
+  "tags": []
+ },
+ {
+  "id": "remo-gironda-agarre-supino",
+  "name": "Remo Gironda agarre supino",
+  "muscle": "espalda",
+  "pattern": "tiron",
+  "equipment": "polea",
+  "home": false,
+  "video": "https://www.youtube.com/watch?v=R2DunRnDU8E",
+  "source": "enciclopedia",
+  "tags": []
+ },
+ {
+  "id": "remo-en-maquina-para-espalda",
+  "name": "Remo en máquina para espalda",
+  "muscle": "espalda",
+  "pattern": "tiron",
+  "equipment": "maquina",
+  "home": false,
+  "video": "https://www.youtube.com/watch?v=d52WnqclSS8",
+  "source": "enciclopedia",
+  "tags": []
+ },
+ {
+  "id": "pullover-cuerda-polea-alta",
+  "name": "Pullover cuerda polea alta",
+  "muscle": "espalda",
+  "pattern": "tiron",
+  "equipment": "polea",
+  "home": false,
+  "video": "https://www.youtube.com/watch?v=B_otL49UMjc",
+  "source": "enciclopedia",
+  "tags": []
+ },
+ {
+  "id": "jalon-al-pecho-agarre-supino",
+  "name": "Jalón al pecho agarre supino",
+  "muscle": "espalda",
+  "pattern": "tiron",
+  "equipment": "polea",
+  "home": false,
+  "video": "https://www.youtube.com/watch?v=XVAlAht6UPw",
+  "source": "enciclopedia",
+  "tags": []
+ },
+ {
+  "id": "jalon-al-pecho-agarre-ancho-y-prono",
+  "name": "Jalón al pecho agarre ancho y prono",
+  "muscle": "espalda",
+  "pattern": "tiron",
+  "equipment": "polea",
+  "home": false,
+  "video": "https://www.youtube.com/watch?v=yXyKTBC_iZc",
+  "source": "enciclopedia",
+  "tags": []
+ },
+ {
+  "id": "jalon-al-pecho-agarre-neutro",
+  "name": "Jalón al pecho agarre neutro",
+  "muscle": "espalda",
+  "pattern": "tiron",
+  "equipment": "polea",
+  "home": false,
+  "video": "https://www.youtube.com/watch?v=IgzxdPVZmyw",
+  "source": "enciclopedia",
+  "tags": []
+ },
+ {
+  "id": "remo-con-mancuerna-con-goma-elastica",
+  "name": "Remo con mancuerna con goma elástica",
+  "muscle": "espalda",
+  "pattern": "tiron",
+  "equipment": "goma",
+  "home": true,
+  "video": "https://www.youtube.com/watch?v=VDc9_MbEVwE",
+  "source": "enciclopedia",
+  "tags": []
+ },
+ {
+  "id": "jalon-al-pecho-con-goma-desde-casa",
+  "name": "Jalón al pecho con goma, desde casa",
+  "muscle": "espalda",
+  "pattern": "tiron",
+  "equipment": "goma",
+  "home": true,
+  "video": "https://www.youtube.com/watch?v=rze-s2-qUs8",
+  "source": "enciclopedia",
+  "tags": [
+   "casa"
+  ]
+ },
+ {
+  "id": "remo-con-goma-desde-casa",
+  "name": "Remo con goma, desde casa",
+  "muscle": "espalda",
+  "pattern": "tiron",
+  "equipment": "goma",
+  "home": true,
+  "video": "https://www.youtube.com/watch?v=xjKQ7mWYO6I",
+  "source": "enciclopedia",
+  "tags": [
+   "casa"
+  ]
+ },
+ {
+  "id": "press-militar-para-hombro-con-goma-elastica",
+  "name": "Press militar para hombro con goma elástica",
+  "muscle": "hombros",
+  "pattern": "empuje",
+  "equipment": "goma",
+  "home": true,
+  "video": "https://www.youtube.com/watch?v=d4j0RiwZUd0",
+  "source": "enciclopedia",
+  "tags": []
+ },
+ {
+  "id": "6-ways-para-hombro",
+  "name": "6 ways para hombro",
+  "muscle": "hombros",
+  "pattern": "empuje",
+  "equipment": "mancuernas",
+  "home": false,
+  "video": "https://www.youtube.com/watch?v=ytRTOT1N4YU",
+  "source": "enciclopedia",
+  "tags": []
+ },
+ {
+  "id": "elevaciones-laterales-con-mancuernas",
+  "name": "Elevaciones laterales con mancuernas",
+  "muscle": "hombros",
+  "pattern": "empuje",
+  "equipment": "mancuernas",
+  "home": false,
+  "video": "https://www.youtube.com/watch?v=SQqBUyBtYnw",
+  "source": "enciclopedia",
+  "tags": []
+ },
+ {
+  "id": "elevaciones-laterales-a-un-brazo-desde-polea-baja",
+  "name": "Elevaciones laterales a un brazo desde polea baja",
+  "muscle": "hombros",
+  "pattern": "empuje",
+  "equipment": "polea",
+  "home": false,
+  "video": "https://www.youtube.com/watch?v=m37FapLAwsQ",
+  "source": "enciclopedia",
+  "tags": []
+ },
+ {
+  "id": "elevaciones-laterales-con-goma",
+  "name": "Elevaciones laterales con goma",
+  "muscle": "hombros",
+  "pattern": "empuje",
+  "equipment": "goma",
+  "home": true,
+  "video": "https://www.youtube.com/watch?v=ajPEmAVo-4E",
+  "source": "enciclopedia",
+  "tags": []
+ },
+ {
+  "id": "remo-al-menton-con-mancuernas",
+  "name": "Remo al mentón con mancuernas",
+  "muscle": "hombros",
+  "pattern": "tiron",
+  "equipment": "mancuernas",
+  "home": false,
+  "video": "https://www.youtube.com/watch?v=woQJOeGKPuQ",
+  "source": "enciclopedia",
+  "tags": []
+ },
+ {
+  "id": "remo-al-menton-con-barra-ez",
+  "name": "Remo al mentón con barra EZ",
+  "muscle": "hombros",
+  "pattern": "tiron",
+  "equipment": "barra",
+  "home": false,
+  "video": "https://www.youtube.com/watch?v=ged7OJlnZ3U",
+  "source": "enciclopedia",
+  "tags": []
+ },
+ {
+  "id": "elevaciones-frontales-con-mancuernas",
+  "name": "Elevaciones frontales con mancuernas",
+  "muscle": "hombros",
+  "pattern": "empuje",
+  "equipment": "mancuernas",
+  "home": false,
+  "video": "https://www.youtube.com/watch?v=CBnsEd6LtOU",
+  "source": "enciclopedia",
+  "tags": []
+ },
+ {
+  "id": "elevaciones-frontales-con-barra",
+  "name": "Elevaciones frontales con barra",
+  "muscle": "hombros",
+  "pattern": "empuje",
+  "equipment": "barra",
+  "home": false,
+  "video": "https://www.youtube.com/watch?v=gZKE7INV7AY",
+  "source": "enciclopedia",
+  "tags": []
+ },
+ {
+  "id": "elevaciones-frontales-con-disco",
+  "name": "Elevaciones frontales con disco",
+  "muscle": "hombros",
+  "pattern": "empuje",
+  "equipment": "disco",
+  "home": false,
+  "video": "https://www.youtube.com/watch?v=PFUZQCfg-bg",
+  "source": "enciclopedia",
+  "tags": []
+ },
+ {
+  "id": "press-militar-para-hombro",
+  "name": "Press militar para hombro",
+  "muscle": "hombros",
+  "pattern": "empuje",
+  "equipment": "barra",
+  "home": false,
+  "video": "https://www.youtube.com/watch?v=5gFu_OYo3ME",
+  "source": "enciclopedia",
+  "tags": []
+ },
+ {
+  "id": "elevaciones-frontales-con-goma",
+  "name": "Elevaciones frontales con goma",
+  "muscle": "hombros",
+  "pattern": "empuje",
+  "equipment": "goma",
+  "home": true,
+  "video": "https://www.youtube.com/watch?v=9D-YL_5xbxQ",
+  "source": "enciclopedia",
+  "tags": []
+ },
+ {
+  "id": "pajaros-en-maquina",
+  "name": "Pájaros en máquina",
+  "muscle": "hombros",
+  "pattern": "tiron",
+  "equipment": "maquina",
+  "home": false,
+  "video": "https://www.youtube.com/watch?v=aAiTxCqhqTU",
+  "source": "enciclopedia",
+  "tags": []
+ },
+ {
+  "id": "cruce-de-poleas-para-hombro-posterior",
+  "name": "Cruce de poleas para hombro posterior",
+  "muscle": "hombros",
+  "pattern": "tiron",
+  "equipment": "polea",
+  "home": false,
+  "video": "https://www.youtube.com/watch?v=XiqXUd6mBo4",
+  "source": "enciclopedia",
+  "tags": []
+ },
+ {
+  "id": "face-pull-con-cuerda-desde-polea-alta",
+  "name": "Face Pull con cuerda desde polea alta",
+  "muscle": "hombros",
+  "pattern": "tiron",
+  "equipment": "polea",
+  "home": false,
+  "video": "https://www.youtube.com/watch?v=MiCj0SB5xyg",
+  "source": "enciclopedia",
+  "tags": []
+ },
+ {
+  "id": "face-pull-con-cuerda-desde-remo-gironda",
+  "name": "Face Pull con cuerda desde remo Gironda",
+  "muscle": "hombros",
+  "pattern": "tiron",
+  "equipment": "polea",
+  "home": false,
+  "video": "https://www.youtube.com/watch?v=WtvIvMF984s",
+  "source": "enciclopedia",
+  "tags": []
+ },
+ {
+  "id": "pajaros-con-mancuernas-tumbado-en-banco-inclinado",
+  "name": "Pájaros con mancuernas tumbado en banco inclinado",
+  "muscle": "hombros",
+  "pattern": "tiron",
+  "equipment": "mancuernas",
+  "home": false,
+  "video": "https://www.youtube.com/watch?v=24z3h_bZ7Zo",
+  "source": "enciclopedia",
+  "tags": []
+ },
+ {
+  "id": "pajaros-con-goma-elastica-de-pie",
+  "name": "Pájaros con goma elástica de pie",
+  "muscle": "hombros",
+  "pattern": "tiron",
+  "equipment": "goma",
+  "home": true,
+  "video": "https://www.youtube.com/watch?v=AtEGmSSmI08",
+  "source": "enciclopedia",
+  "tags": []
+ },
+ {
+  "id": "face-pull-con-goma-desde-casa",
+  "name": "Face Pull con goma desde casa",
+  "muscle": "hombros",
+  "pattern": "tiron",
+  "equipment": "goma",
+  "home": true,
+  "video": "https://www.youtube.com/watch?v=P4D6stkDVoU",
+  "source": "enciclopedia",
+  "tags": [
+   "casa"
+  ]
+ },
+ {
+  "id": "gluteo-medio-desde-tumbada-lateral-con-goma",
+  "name": "Glúteo medio desde tumbada lateral con goma",
+  "muscle": "gluteos",
+  "pattern": "pierna",
+  "equipment": "goma",
+  "home": true,
+  "video": "https://www.youtube.com/watch?v=qFj_wM7eTKU",
+  "source": "enciclopedia",
+  "tags": [
+   "activacion"
+  ]
+ },
+ {
+  "id": "patada-de-gluteo-con-goma-elastica-en-tobillos-de-pie",
+  "name": "Patada de glúteo con goma elástica en tobillos, de pie",
+  "muscle": "gluteos",
+  "pattern": "pierna",
+  "equipment": "goma",
+  "home": true,
+  "video": "https://www.youtube.com/watch?v=OfRg3ZBiu5Y",
+  "source": "enciclopedia",
+  "tags": [
+   "activacion"
+  ]
+ },
+ {
+  "id": "patada-de-gluteo-con-goma-elastica-en-rodillas-desde-cuadrupedia",
+  "name": "Patada de glúteo con goma elástica en rodillas, desde cuadrupedia",
+  "muscle": "gluteos",
+  "pattern": "pierna",
+  "equipment": "goma",
+  "home": true,
+  "video": "https://www.youtube.com/watch?v=R7-DMZYBVxI",
+  "source": "enciclopedia",
+  "tags": [
+   "activacion"
+  ]
+ },
+ {
+  "id": "elevacion-lateral-de-pierna-recta-desde-tumbada-con-goma-elastica-en-tobillos",
+  "name": "Elevación lateral de pierna recta, desde tumbada, con goma elástica en tobillos",
+  "muscle": "gluteos",
+  "pattern": "pierna",
+  "equipment": "goma",
+  "home": true,
+  "video": "https://www.youtube.com/watch?v=Ao332yZt14g",
+  "source": "enciclopedia",
+  "tags": [
+   "activacion"
+  ]
+ },
+ {
+  "id": "elevacion-de-cadera-tumbada-boca-arriba-con-goma-en-las-rodillas-abrir-y-cerrar",
+  "name": "Elevación de cadera tumbada boca arriba con goma en las rodillas + abrir y cerrar",
+  "muscle": "gluteos",
+  "pattern": "pierna",
+  "equipment": "goma",
+  "home": true,
+  "video": "https://www.youtube.com/watch?v=V9jLjN9dQBE",
+  "source": "enciclopedia",
+  "tags": [
+   "activacion"
+  ]
+ },
+ {
+  "id": "frog-pump",
+  "name": "Frog Pump",
+  "muscle": "gluteos",
+  "pattern": "pierna",
+  "equipment": "peso-corporal",
+  "home": true,
+  "video": "https://www.youtube.com/watch?v=2MLTyAeREQA",
+  "source": "enciclopedia",
+  "tags": [
+   "activacion"
+  ]
+ },
+ {
+  "id": "elevacion-de-cadera-desde-tumbada",
+  "name": "Elevación de cadera desde tumbada",
+  "muscle": "gluteos",
+  "pattern": "pierna",
+  "equipment": "peso-corporal",
+  "home": true,
+  "video": "https://www.youtube.com/watch?v=szHEkYkqKVM",
+  "source": "enciclopedia",
+  "tags": [
+   "activacion"
+  ]
+ },
+ {
+  "id": "monster-walk-con-goma-elastica-en-los-pies",
+  "name": "Monster Walk con goma elástica en los pies",
+  "muscle": "gluteos",
+  "pattern": "pierna",
+  "equipment": "goma",
+  "home": true,
+  "video": "https://www.youtube.com/watch?v=x4jRhZwXUEI",
+  "source": "enciclopedia",
+  "tags": [
+   "activacion"
+  ]
+ },
+ {
+  "id": "abducciones-con-goma-elastica-sentada-en-una-silla-o-banco",
+  "name": "Abducciones con goma elástica sentada en una silla o banco",
+  "muscle": "gluteos",
+  "pattern": "pierna",
+  "equipment": "goma",
+  "home": true,
+  "video": "https://www.youtube.com/watch?v=-i9HtKLUh_M",
+  "source": "enciclopedia",
+  "tags": [
+   "activacion"
+  ]
+ },
+ {
+  "id": "abducciones-con-goma-elastica-en-rodillas-desde-cuadrupedia",
+  "name": "Abducciones con goma elástica en rodillas, desde cuadrupedia",
+  "muscle": "gluteos",
+  "pattern": "pierna",
+  "equipment": "goma",
+  "home": true,
+  "video": "https://www.youtube.com/watch?v=WCw4yZRVPHk",
+  "source": "enciclopedia",
+  "tags": [
+   "activacion"
+  ]
+ },
+ {
+  "id": "elevacion-dinamica-y-patada-con-tu-propio-peso",
+  "name": "Elevación dinámica y patada con tu propio peso",
+  "muscle": "gluteos",
+  "pattern": "pierna",
+  "equipment": "peso-corporal",
+  "home": true,
+  "video": "https://www.youtube.com/watch?v=-8i1lkGUoYA",
+  "source": "enciclopedia",
+  "tags": [
+   "activacion"
+  ]
+ },
+ {
+  "id": "elevacion-lateral-de-pierna-desde-cuadrupedia-con-tu-propio-peso",
+  "name": "Elevación lateral de pierna desde cuadrupedia con tu propio peso",
+  "muscle": "gluteos",
+  "pattern": "pierna",
+  "equipment": "peso-corporal",
+  "home": true,
+  "video": "https://www.youtube.com/watch?v=tw3b-QACd7o",
+  "source": "enciclopedia",
+  "tags": [
+   "activacion"
+  ]
+ },
+ {
+  "id": "elevacion-de-cadera-tumbada-boca-arriba-con-una-pierna-cruzada",
+  "name": "Elevación de cadera tumbada boca arriba con una pierna cruzada",
+  "muscle": "gluteos",
+  "pattern": "pierna",
+  "equipment": "peso-corporal",
+  "home": true,
+  "video": "https://www.youtube.com/watch?v=GiUxh-en8xo",
+  "source": "enciclopedia",
+  "tags": [
+   "activacion"
+  ]
+ },
+ {
+  "id": "pull-through-desde-polea-baja-con-cuerda",
+  "name": "Pull Through desde polea baja con cuerda",
+  "muscle": "gluteos",
+  "pattern": "pierna",
+  "equipment": "polea",
+  "home": false,
+  "video": "https://www.youtube.com/watch?v=SL4FjYrvNZQ",
+  "source": "enciclopedia",
+  "tags": [
+   "activacion"
+  ]
+ },
+ {
+  "id": "patada-de-gluteo-desde-casa-simulando-polea-baja",
+  "name": "Patada de glúteo desde casa, simulando polea baja",
+  "muscle": "gluteos",
+  "pattern": "pierna",
+  "equipment": "polea",
+  "home": true,
+  "video": "https://www.youtube.com/watch?v=6HlPrZgaBJw",
+  "source": "enciclopedia",
+  "tags": [
+   "activacion",
+   "casa"
+  ]
+ },
+ {
+  "id": "abducciones-desde-casa-con-goma-tumbada-boca-arriba",
+  "name": "Abducciones desde casa con goma, tumbada boca arriba",
+  "muscle": "gluteos",
+  "pattern": "pierna",
+  "equipment": "goma",
+  "home": true,
+  "video": "https://www.youtube.com/watch?v=Fbt4x82BMZ0",
+  "source": "enciclopedia",
+  "tags": [
+   "activacion",
+   "casa"
+  ]
+ },
+ {
+  "id": "peso-muerto-tipo-sumo-con-barra",
+  "name": "Peso muerto tipo sumo con barra",
+  "muscle": "gluteos",
+  "pattern": "pierna",
+  "equipment": "barra",
+  "home": false,
+  "video": "https://www.youtube.com/watch?v=--lOC8ENbr4",
+  "source": "enciclopedia",
+  "tags": []
+ },
+ {
+  "id": "puente-de-gluteo-con-barra",
+  "name": "Puente de glúteo con barra",
+  "muscle": "gluteos",
+  "pattern": "pierna",
+  "equipment": "barra",
+  "home": false,
+  "video": "https://www.youtube.com/watch?v=ywcLkhUpAQY",
+  "source": "enciclopedia",
+  "tags": []
+ },
+ {
+  "id": "hip-thrust-con-barra",
+  "name": "Hip thrust con barra",
+  "muscle": "gluteos",
+  "pattern": "pierna",
+  "equipment": "barra",
+  "home": false,
+  "video": "https://www.youtube.com/watch?v=ttPdu3-rE3c",
+  "source": "enciclopedia",
+  "tags": []
+ },
+ {
+  "id": "hip-thrust-con-barra-y-con-goma-en-las-rodillas",
+  "name": "Hip thrust con barra y con goma en las rodillas",
+  "muscle": "gluteos",
+  "pattern": "pierna",
+  "equipment": "goma",
+  "home": true,
+  "video": "https://www.youtube.com/watch?v=wPpg7oH2SXs",
+  "source": "enciclopedia",
+  "tags": []
+ },
+ {
+  "id": "patada-de-gluteo-desde-polea-baja",
+  "name": "Patada de glúteo desde polea baja",
+  "muscle": "gluteos",
+  "pattern": "pierna",
+  "equipment": "polea",
+  "home": false,
+  "video": "https://www.youtube.com/watch?v=NelW9Fkk718",
+  "source": "enciclopedia",
+  "tags": []
+ },
+ {
+  "id": "patada-de-gluteo-en-maquina",
+  "name": "Patada de glúteo en máquina",
+  "muscle": "gluteos",
+  "pattern": "pierna",
+  "equipment": "maquina",
+  "home": false,
+  "video": "https://www.youtube.com/watch?v=Itt_XcitgjY",
+  "source": "enciclopedia",
+  "tags": []
+ },
+ {
+  "id": "abduccion-lateral-de-pierna-desde-polea-baja",
+  "name": "Abducción lateral de pierna desde polea baja",
+  "muscle": "gluteos",
+  "pattern": "pierna",
+  "equipment": "polea",
+  "home": false,
+  "video": "https://www.youtube.com/watch?v=O71vsZ-oc1s",
+  "source": "enciclopedia",
+  "tags": []
+ },
+ {
+  "id": "maquina-de-abductores",
+  "name": "Máquina de abductores",
+  "muscle": "gluteos",
+  "pattern": "pierna",
+  "equipment": "maquina",
+  "home": false,
+  "video": "https://www.youtube.com/watch?v=tAnAP9iILlE",
+  "source": "enciclopedia",
+  "tags": []
+ },
+ {
+  "id": "hip-thrust-desde-casa-con-goma",
+  "name": "Hip thrust desde casa, con goma",
+  "muscle": "gluteos",
+  "pattern": "pierna",
+  "equipment": "goma",
+  "home": true,
+  "video": "https://www.youtube.com/watch?v=YynXVju_LGI",
+  "source": "enciclopedia",
+  "tags": [
+   "casa"
+  ]
+ },
+ {
+  "id": "elevacion-de-cadera-unilateral",
+  "name": "Elevación de cadera unilateral",
+  "muscle": "isquios",
+  "pattern": "pierna",
+  "equipment": "peso-corporal",
+  "home": true,
+  "video": "https://www.youtube.com/watch?v=pWJ0zTa-Kls",
+  "source": "enciclopedia",
+  "tags": []
+ },
+ {
+  "id": "femoral-maquina-de-pie",
+  "name": "Femoral máquina de pie",
+  "muscle": "isquios",
+  "pattern": "pierna",
+  "equipment": "maquina",
+  "home": false,
+  "video": "https://www.youtube.com/watch?v=_8aPszRfmbA",
+  "source": "enciclopedia",
+  "tags": []
+ },
+ {
+  "id": "femoral-maquina-tumbada",
+  "name": "Femoral máquina tumbada",
+  "muscle": "isquios",
+  "pattern": "pierna",
+  "equipment": "maquina",
+  "home": false,
+  "video": "https://www.youtube.com/watch?v=GnqQF5cbDX8",
+  "source": "enciclopedia",
+  "tags": []
+ },
+ {
+  "id": "peso-muerto-rumano-con-mancuernas-para-femoral",
+  "name": "Peso muerto rumano con mancuernas para femoral",
+  "muscle": "isquios",
+  "pattern": "pierna",
+  "equipment": "mancuernas",
+  "home": false,
+  "video": "https://www.youtube.com/watch?v=jIAl3XoBCjM",
+  "source": "enciclopedia",
+  "tags": []
+ },
+ {
+  "id": "femoral-con-discos-deslizantes-o-toalla-desde-casa",
+  "name": "Femoral con discos deslizantes o toalla, desde casa",
+  "muscle": "isquios",
+  "pattern": "pierna",
+  "equipment": "peso-corporal",
+  "home": true,
+  "video": "https://www.youtube.com/watch?v=OGCNsHlRQtA",
+  "source": "enciclopedia",
+  "tags": [
+   "casa"
+  ]
+ },
+ {
+  "id": "aductor-en-maquina-sentada",
+  "name": "Aductor en máquina sentada",
+  "muscle": "aductores",
+  "pattern": "pierna",
+  "equipment": "maquina",
+  "home": false,
+  "video": "https://www.youtube.com/watch?v=Jvz7CBW6wuk",
+  "source": "enciclopedia",
+  "tags": []
+ },
+ {
+  "id": "aductor-en-polea-baja-o-aductor-con-banda-elastica",
+  "name": "Aductor en polea baja o aductor con banda elástica",
+  "muscle": "aductores",
+  "pattern": "pierna",
+  "equipment": "goma",
+  "home": true,
+  "video": "https://www.youtube.com/watch?v=GcofYUbpiy0",
+  "source": "enciclopedia",
+  "tags": []
+ },
+ {
+  "id": "plancha-copenhague",
+  "name": "Plancha Copenhague",
+  "muscle": "aductores",
+  "pattern": "pierna",
+  "equipment": "peso-corporal",
+  "home": true,
+  "video": "https://www.youtube.com/watch?v=NWeen4hYp7U",
+  "source": "enciclopedia",
+  "tags": []
+ },
+ {
+  "id": "sentadilla-goblet-con-mancuerna",
+  "name": "Sentadilla goblet con mancuerna",
+  "muscle": "cuadriceps",
+  "pattern": "pierna",
+  "equipment": "mancuernas",
+  "home": false,
+  "video": "https://www.youtube.com/watch?v=dgihJczWwiE",
+  "source": "enciclopedia",
+  "tags": []
+ },
+ {
+  "id": "cuadriceps-en-maquina",
+  "name": "Cuádriceps en máquina",
+  "muscle": "cuadriceps",
+  "pattern": "pierna",
+  "equipment": "maquina",
+  "home": false,
+  "video": "https://www.youtube.com/watch?v=EHAd69GSkYE",
+  "source": "enciclopedia",
+  "tags": []
+ },
+ {
+  "id": "sentadilla-tipo-sumo-con-mancuerna",
+  "name": "Sentadilla tipo sumo con mancuerna",
+  "muscle": "cuadriceps",
+  "pattern": "pierna",
+  "equipment": "mancuernas",
+  "home": false,
+  "video": "https://www.youtube.com/watch?v=rfenapRFch4",
+  "source": "enciclopedia",
+  "tags": []
+ },
+ {
+  "id": "zancadas-dinamicas",
+  "name": "Zancadas dinámicas",
+  "muscle": "cuadriceps",
+  "pattern": "pierna",
+  "equipment": "mancuernas",
+  "home": false,
+  "video": "https://www.youtube.com/watch?v=nalX6zNzJfk",
+  "source": "enciclopedia",
+  "tags": []
+ },
+ {
+  "id": "zancadas-estaticas",
+  "name": "Zancadas estáticas",
+  "muscle": "cuadriceps",
+  "pattern": "pierna",
+  "equipment": "mancuernas",
+  "home": false,
+  "video": "https://www.youtube.com/watch?v=dPGXqdXI-nk",
+  "source": "enciclopedia",
+  "tags": []
+ },
+ {
+  "id": "zancada-bulgara-en-multipower",
+  "name": "Zancada búlgara en multipower",
+  "muscle": "cuadriceps",
+  "pattern": "pierna",
+  "equipment": "multipower",
+  "home": false,
+  "video": "https://www.youtube.com/watch?v=QbroBC-qlvs",
+  "source": "enciclopedia",
+  "tags": []
+ },
+ {
+  "id": "zancada-bulgara-con-mancuerna",
+  "name": "Zancada búlgara con mancuerna",
+  "muscle": "cuadriceps",
+  "pattern": "pierna",
+  "equipment": "mancuernas",
+  "home": false,
+  "video": "https://www.youtube.com/watch?v=4tRNgd5Uej4",
+  "source": "enciclopedia",
+  "tags": []
+ },
+ {
+  "id": "sentadilla-en-multipower",
+  "name": "Sentadilla en multipower",
+  "muscle": "cuadriceps",
+  "pattern": "pierna",
+  "equipment": "multipower",
+  "home": false,
+  "video": "https://www.youtube.com/watch?v=BnnoLeQC2wk",
+  "source": "enciclopedia",
+  "tags": []
+ },
+ {
+  "id": "sentadilla-en-maquina-hack",
+  "name": "Sentadilla en máquina Hack",
+  "muscle": "cuadriceps",
+  "pattern": "pierna",
+  "equipment": "maquina",
+  "home": false,
+  "video": "https://www.youtube.com/watch?v=mFvuttgGe2o",
+  "source": "enciclopedia",
+  "tags": []
+ },
+ {
+  "id": "prensa-vertical",
+  "name": "Prensa vertical",
+  "muscle": "cuadriceps",
+  "pattern": "pierna",
+  "equipment": "maquina",
+  "home": false,
+  "video": "https://www.youtube.com/watch?v=LDJ6bTBWTCg",
+  "source": "enciclopedia",
+  "tags": []
+ },
+ {
+  "id": "prensa-horizontal",
+  "name": "Prensa horizontal",
+  "muscle": "cuadriceps",
+  "pattern": "pierna",
+  "equipment": "maquina",
+  "home": false,
+  "video": "https://www.youtube.com/watch?v=XPcNdeC-STc",
+  "source": "enciclopedia",
+  "tags": []
+ },
+ {
+  "id": "prensa-inclinada",
+  "name": "Prensa inclinada",
+  "muscle": "cuadriceps",
+  "pattern": "pierna",
+  "equipment": "maquina",
+  "home": false,
+  "video": "https://www.youtube.com/watch?v=ggIs3-AimnI",
+  "source": "enciclopedia",
+  "tags": []
+ },
+ {
+  "id": "zancada-bulgara-con-salto",
+  "name": "Zancada búlgara con salto",
+  "muscle": "cuadriceps",
+  "pattern": "pierna",
+  "equipment": "peso-corporal",
+  "home": true,
+  "video": "https://www.youtube.com/watch?v=QHgcB7bVl_o",
+  "source": "enciclopedia",
+  "tags": []
+ },
+ {
+  "id": "sentadilla-con-tu-propio-peso",
+  "name": "Sentadilla con tu propio peso",
+  "muscle": "cuadriceps",
+  "pattern": "pierna",
+  "equipment": "peso-corporal",
+  "home": true,
+  "video": "https://www.youtube.com/watch?v=4p0twsjgySA",
+  "source": "enciclopedia",
+  "tags": []
+ },
+ {
+  "id": "elevaciones-de-talones-de-pie",
+  "name": "Elevaciones de talones de pie",
+  "muscle": "gemelos",
+  "pattern": "pierna",
+  "equipment": "peso-corporal",
+  "home": true,
+  "video": "https://www.youtube.com/watch?v=XvHhG4E4tDo",
+  "source": "enciclopedia",
+  "tags": []
+ },
+ {
+  "id": "gemelos-en-prensa-horizontal",
+  "name": "Gemelos en prensa horizontal",
+  "muscle": "gemelos",
+  "pattern": "pierna",
+  "equipment": "maquina",
+  "home": false,
+  "video": "https://www.youtube.com/watch?v=zmNBx-Ilhdc",
+  "source": "enciclopedia",
+  "tags": []
+ },
+ {
+  "id": "gemelos-sentada-en-maquina",
+  "name": "Gemelos sentada en máquina",
+  "muscle": "gemelos",
+  "pattern": "pierna",
+  "equipment": "maquina",
+  "home": false,
+  "video": "https://www.youtube.com/watch?v=HL0NBJ3I3oQ",
+  "source": "enciclopedia",
+  "tags": []
+ },
+ {
+  "id": "curl-biceps-con-barra-de-pie",
+  "name": "Curl bíceps con barra de pie",
+  "muscle": "biceps",
+  "pattern": "tiron",
+  "equipment": "barra",
+  "home": false,
+  "video": "https://www.youtube.com/watch?v=sdYGwFamBrA",
+  "source": "enciclopedia",
+  "tags": []
+ },
+ {
+  "id": "curl-biceps-con-barra-desde-polea-baja",
+  "name": "Curl bíceps con barra desde polea baja",
+  "muscle": "biceps",
+  "pattern": "tiron",
+  "equipment": "polea",
+  "home": false,
+  "video": "https://www.youtube.com/watch?v=h7U1MkLY6s8",
+  "source": "enciclopedia",
+  "tags": []
+ },
+ {
+  "id": "curl-biceps-en-banco-scott-barra-ez",
+  "name": "Curl bíceps en banco Scott barra EZ",
+  "muscle": "biceps",
+  "pattern": "tiron",
+  "equipment": "barra",
+  "home": false,
+  "video": "https://www.youtube.com/watch?v=MSqzyRDIbt8",
+  "source": "enciclopedia",
+  "tags": []
+ },
+ {
+  "id": "curl-biceps-con-mancuernas",
+  "name": "Curl bíceps con mancuernas",
+  "muscle": "biceps",
+  "pattern": "tiron",
+  "equipment": "mancuernas",
+  "home": false,
+  "video": "https://www.youtube.com/watch?v=kbGbFpvRhOs",
+  "source": "enciclopedia",
+  "tags": []
+ },
+ {
+  "id": "curl-biceps-con-mancuernas-tipo-martillo",
+  "name": "Curl bíceps con mancuernas tipo martillo",
+  "muscle": "biceps",
+  "pattern": "tiron",
+  "equipment": "mancuernas",
+  "home": false,
+  "video": "https://www.youtube.com/watch?v=b61gOCntVsU",
+  "source": "enciclopedia",
+  "tags": []
+ },
+ {
+  "id": "curl-biceps-concentrado-a-una-mano",
+  "name": "Curl bíceps concentrado a una mano",
+  "muscle": "biceps",
+  "pattern": "tiron",
+  "equipment": "peso-corporal",
+  "home": true,
+  "video": "https://www.youtube.com/watch?v=A8AqYgshog4",
+  "source": "enciclopedia",
+  "tags": []
+ },
+ {
+  "id": "curl-biceps-con-goma-elastica-desde-casa",
+  "name": "Curl bíceps con goma elástica desde casa",
+  "muscle": "biceps",
+  "pattern": "tiron",
+  "equipment": "goma",
+  "home": true,
+  "video": "https://www.youtube.com/watch?v=4JZq6xMbjiQ",
+  "source": "enciclopedia",
+  "tags": [
+   "casa"
+  ]
+ },
+ {
+  "id": "triceps-polea-alta-con-cuerda",
+  "name": "Tríceps polea alta con cuerda",
+  "muscle": "triceps",
+  "pattern": "empuje",
+  "equipment": "polea",
+  "home": false,
+  "video": "https://www.youtube.com/watch?v=RlV61FcFDPE",
+  "source": "enciclopedia",
+  "tags": []
+ },
+ {
+  "id": "triceps-polea-alta-con-cuerda-por-encima-de-la-cabeza",
+  "name": "Tríceps polea alta con cuerda por encima de la cabeza",
+  "muscle": "triceps",
+  "pattern": "empuje",
+  "equipment": "polea",
+  "home": false,
+  "video": "https://www.youtube.com/watch?v=OAntsCFw0j8",
+  "source": "enciclopedia",
+  "tags": []
+ },
+ {
+  "id": "triceps-polea-alta-con-barra",
+  "name": "Tríceps polea alta con barra",
+  "muscle": "triceps",
+  "pattern": "empuje",
+  "equipment": "polea",
+  "home": false,
+  "video": "https://www.youtube.com/watch?v=9UzuKiOeL2c",
+  "source": "enciclopedia",
+  "tags": []
+ },
+ {
+  "id": "triceps-polea-alta-a-un-brazo",
+  "name": "Tríceps polea alta a un brazo",
+  "muscle": "triceps",
+  "pattern": "empuje",
+  "equipment": "polea",
+  "home": false,
+  "video": "https://www.youtube.com/watch?v=Z8DINkd5Kw4",
+  "source": "enciclopedia",
+  "tags": []
+ },
+ {
+  "id": "patada-de-triceps-con-mancuernas",
+  "name": "Patada de tríceps con mancuernas",
+  "muscle": "triceps",
+  "pattern": "empuje",
+  "equipment": "mancuernas",
+  "home": false,
+  "video": "https://www.youtube.com/watch?v=BhXYRgN3kg8",
+  "source": "enciclopedia",
+  "tags": []
+ },
+ {
+  "id": "patada-de-triceps-a-una-mano-desde-polea-baja",
+  "name": "Patada de tríceps a una mano desde polea baja",
+  "muscle": "triceps",
+  "pattern": "empuje",
+  "equipment": "polea",
+  "home": false,
+  "video": "https://www.youtube.com/watch?v=UZNYR5xUYQY",
+  "source": "enciclopedia",
+  "tags": []
+ },
+ {
+  "id": "press-frances-con-mancuernas-para-triceps",
+  "name": "Press francés con mancuernas para tríceps",
+  "muscle": "triceps",
+  "pattern": "empuje",
+  "equipment": "mancuernas",
+  "home": false,
+  "video": "https://www.youtube.com/watch?v=vThMMLcGSsY",
+  "source": "enciclopedia",
+  "tags": []
+ },
+ {
+  "id": "press-frances-con-barra-ez-para-triceps",
+  "name": "Press francés con barra EZ para tríceps",
+  "muscle": "triceps",
+  "pattern": "empuje",
+  "equipment": "barra",
+  "home": false,
+  "video": "https://www.youtube.com/watch?v=0kT1atwDmVg",
+  "source": "enciclopedia",
+  "tags": []
+ },
+ {
+  "id": "fondos-para-triceps",
+  "name": "Fondos para tríceps",
+  "muscle": "triceps",
+  "pattern": "empuje",
+  "equipment": "peso-corporal",
+  "home": true,
+  "video": "https://www.youtube.com/watch?v=QIemzD_F0mk",
+  "source": "enciclopedia",
+  "tags": []
+ },
+ {
+  "id": "fondos-para-triceps-en-maquina",
+  "name": "Fondos para tríceps en máquina",
+  "muscle": "triceps",
+  "pattern": "empuje",
+  "equipment": "maquina",
+  "home": false,
+  "video": "https://www.youtube.com/watch?v=QYCypaBGeeg",
+  "source": "enciclopedia",
+  "tags": []
+ },
+ {
+  "id": "triceps-en-polea-alta-desde-casa-con-goma",
+  "name": "Tríceps en polea alta desde casa, con goma",
+  "muscle": "triceps",
+  "pattern": "empuje",
+  "equipment": "goma",
+  "home": true,
+  "video": "https://www.youtube.com/watch?v=SGj98zdRQ24",
+  "source": "enciclopedia",
+  "tags": [
+   "casa"
+  ]
+ },
+ {
+  "id": "flexiones-para-triceps",
+  "name": "Flexiones para tríceps",
+  "muscle": "triceps",
+  "pattern": "empuje",
+  "equipment": "peso-corporal",
+  "home": true,
+  "video": "https://www.youtube.com/watch?v=v71Op6Wh8Rg",
+  "source": "enciclopedia",
+  "tags": []
+ },
+ {
+  "id": "patada-de-triceps-desde-casa-con-goma",
+  "name": "Patada de tríceps desde casa con goma",
+  "muscle": "triceps",
+  "pattern": "empuje",
+  "equipment": "goma",
+  "home": true,
+  "video": "https://www.youtube.com/watch?v=rjFcCLi0m8c",
+  "source": "enciclopedia",
+  "tags": [
+   "casa"
+  ]
+ },
+ {
+  "id": "press-banca-con-barra",
+  "name": "Press banca con barra",
+  "muscle": "pecho",
+  "pattern": "empuje",
+  "equipment": "barra",
+  "home": false,
+  "video": null,
+  "source": "base",
+  "tags": []
+ },
+ {
+  "id": "press-banca-inclinado-con-barra",
+  "name": "Press banca inclinado con barra",
+  "muscle": "pecho",
+  "pattern": "empuje",
+  "equipment": "barra",
+  "home": false,
+  "video": null,
+  "source": "base",
+  "tags": []
+ },
+ {
+  "id": "press-plano-con-mancuernas",
+  "name": "Press plano con mancuernas",
+  "muscle": "pecho",
+  "pattern": "empuje",
+  "equipment": "mancuernas",
+  "home": false,
+  "video": null,
+  "source": "base",
+  "tags": []
+ },
+ {
+  "id": "press-inclinado-con-mancuernas",
+  "name": "Press inclinado con mancuernas",
+  "muscle": "pecho",
+  "pattern": "empuje",
+  "equipment": "mancuernas",
+  "home": false,
+  "video": null,
+  "source": "base",
+  "tags": []
+ },
+ {
+  "id": "press-declinado-con-barra",
+  "name": "Press declinado con barra",
+  "muscle": "pecho",
+  "pattern": "empuje",
+  "equipment": "barra",
+  "home": false,
+  "video": null,
+  "source": "base",
+  "tags": []
+ },
+ {
+  "id": "press-de-pecho-en-maquina",
+  "name": "Press de pecho en máquina",
+  "muscle": "pecho",
+  "pattern": "empuje",
+  "equipment": "maquina",
+  "home": false,
+  "video": null,
+  "source": "base",
+  "tags": []
+ },
+ {
+  "id": "aperturas-con-mancuernas",
+  "name": "Aperturas con mancuernas",
+  "muscle": "pecho",
+  "pattern": "empuje",
+  "equipment": "mancuernas",
+  "home": false,
+  "video": null,
+  "source": "base",
+  "tags": []
+ },
+ {
+  "id": "contractor-de-pecho-pec-deck",
+  "name": "Contractor de pecho (pec deck)",
+  "muscle": "pecho",
+  "pattern": "empuje",
+  "equipment": "maquina",
+  "home": false,
+  "video": null,
+  "source": "base",
+  "tags": []
+ },
+ {
+  "id": "cruce-de-poleas-para-pecho",
+  "name": "Cruce de poleas para pecho",
+  "muscle": "pecho",
+  "pattern": "empuje",
+  "equipment": "polea",
+  "home": false,
+  "video": null,
+  "source": "base",
+  "tags": []
+ },
+ {
+  "id": "flexiones-de-pecho",
+  "name": "Flexiones de pecho",
+  "muscle": "pecho",
+  "pattern": "empuje",
+  "equipment": "peso-corporal",
+  "home": true,
+  "video": null,
+  "source": "base",
+  "tags": []
+ },
+ {
+  "id": "fondos-en-paralelas-para-pecho",
+  "name": "Fondos en paralelas para pecho",
+  "muscle": "pecho",
+  "pattern": "empuje",
+  "equipment": "peso-corporal",
+  "home": true,
+  "video": null,
+  "source": "base",
+  "tags": []
+ },
+ {
+  "id": "press-inclinado-en-multipower",
+  "name": "Press inclinado en multipower",
+  "muscle": "pecho",
+  "pattern": "empuje",
+  "equipment": "multipower",
+  "home": false,
+  "video": null,
+  "source": "base",
+  "tags": []
+ },
+ {
+  "id": "dominadas",
+  "name": "Dominadas",
+  "muscle": "espalda",
+  "pattern": "tiron",
+  "equipment": "peso-corporal",
+  "home": true,
+  "video": null,
+  "source": "base",
+  "tags": []
+ },
+ {
+  "id": "dominadas-supinas",
+  "name": "Dominadas supinas",
+  "muscle": "espalda",
+  "pattern": "tiron",
+  "equipment": "peso-corporal",
+  "home": true,
+  "video": null,
+  "source": "base",
+  "tags": []
+ },
+ {
+  "id": "peso-muerto-convencional",
+  "name": "Peso muerto convencional",
+  "muscle": "espalda",
+  "pattern": "tiron",
+  "equipment": "barra",
+  "home": false,
+  "video": null,
+  "source": "base",
+  "tags": []
+ },
+ {
+  "id": "remo-con-pecho-apoyado-seal-row",
+  "name": "Remo con pecho apoyado (seal row)",
+  "muscle": "espalda",
+  "pattern": "tiron",
+  "equipment": "barra",
+  "home": false,
+  "video": null,
+  "source": "base",
+  "tags": []
+ },
+ {
+  "id": "pullover-con-mancuerna",
+  "name": "Pullover con mancuerna",
+  "muscle": "espalda",
+  "pattern": "tiron",
+  "equipment": "mancuernas",
+  "home": false,
+  "video": null,
+  "source": "base",
+  "tags": []
+ },
+ {
+  "id": "encogimientos-con-mancuernas",
+  "name": "Encogimientos con mancuernas",
+  "muscle": "espalda",
+  "pattern": "tiron",
+  "equipment": "mancuernas",
+  "home": false,
+  "video": null,
+  "source": "base",
+  "tags": []
+ },
+ {
+  "id": "encogimientos-con-barra",
+  "name": "Encogimientos con barra",
+  "muscle": "espalda",
+  "pattern": "tiron",
+  "equipment": "barra",
+  "home": false,
+  "video": null,
+  "source": "base",
+  "tags": []
+ },
+ {
+  "id": "hiperextensiones-lumbares",
+  "name": "Hiperextensiones lumbares",
+  "muscle": "espalda",
+  "pattern": "tiron",
+  "equipment": "peso-corporal",
+  "home": true,
+  "video": null,
+  "source": "base",
+  "tags": []
+ },
+ {
+  "id": "jalon-al-pecho-agarre-cerrado-supino",
+  "name": "Jalón al pecho agarre cerrado supino",
+  "muscle": "espalda",
+  "pattern": "tiron",
+  "equipment": "polea",
+  "home": false,
+  "video": null,
+  "source": "base",
+  "tags": []
+ },
+ {
+  "id": "press-arnold-con-mancuernas",
+  "name": "Press Arnold con mancuernas",
+  "muscle": "hombros",
+  "pattern": "empuje",
+  "equipment": "mancuernas",
+  "home": false,
+  "video": null,
+  "source": "base",
+  "tags": []
+ },
+ {
+  "id": "press-de-hombro-en-maquina",
+  "name": "Press de hombro en máquina",
+  "muscle": "hombros",
+  "pattern": "empuje",
+  "equipment": "maquina",
+  "home": false,
+  "video": null,
+  "source": "base",
+  "tags": []
+ },
+ {
+  "id": "press-militar-con-mancuernas-sentado",
+  "name": "Press militar con mancuernas sentado",
+  "muscle": "hombros",
+  "pattern": "empuje",
+  "equipment": "mancuernas",
+  "home": false,
+  "video": null,
+  "source": "base",
+  "tags": []
+ },
+ {
+  "id": "elevaciones-laterales-en-maquina",
+  "name": "Elevaciones laterales en máquina",
+  "muscle": "hombros",
+  "pattern": "empuje",
+  "equipment": "maquina",
+  "home": false,
+  "video": null,
+  "source": "base",
+  "tags": []
+ },
+ {
+  "id": "sentadilla-con-barra",
+  "name": "Sentadilla con barra",
+  "muscle": "cuadriceps",
+  "pattern": "pierna",
+  "equipment": "barra",
+  "home": false,
+  "video": null,
+  "source": "base",
+  "tags": []
+ },
+ {
+  "id": "sentadilla-frontal-con-barra",
+  "name": "Sentadilla frontal con barra",
+  "muscle": "cuadriceps",
+  "pattern": "pierna",
+  "equipment": "barra",
+  "home": false,
+  "video": null,
+  "source": "base",
+  "tags": []
+ },
+ {
+  "id": "peso-muerto-rumano-con-barra",
+  "name": "Peso muerto rumano con barra",
+  "muscle": "isquios",
+  "pattern": "pierna",
+  "equipment": "barra",
+  "home": false,
+  "video": null,
+  "source": "base",
+  "tags": []
+ },
+ {
+  "id": "buenos-dias-con-barra",
+  "name": "Buenos días con barra",
+  "muscle": "isquios",
+  "pattern": "pierna",
+  "equipment": "barra",
+  "home": false,
+  "video": null,
+  "source": "base",
+  "tags": []
+ },
+ {
+  "id": "femoral-sentado-en-maquina",
+  "name": "Femoral sentado en máquina",
+  "muscle": "isquios",
+  "pattern": "pierna",
+  "equipment": "maquina",
+  "home": false,
+  "video": null,
+  "source": "base",
+  "tags": []
+ },
+ {
+  "id": "zancadas-caminando-con-mancuernas",
+  "name": "Zancadas caminando con mancuernas",
+  "muscle": "cuadriceps",
+  "pattern": "pierna",
+  "equipment": "mancuernas",
+  "home": false,
+  "video": null,
+  "source": "base",
+  "tags": []
+ },
+ {
+  "id": "step-up-al-cajon-con-mancuernas",
+  "name": "Step-up al cajón con mancuernas",
+  "muscle": "cuadriceps",
+  "pattern": "pierna",
+  "equipment": "mancuernas",
+  "home": false,
+  "video": null,
+  "source": "base",
+  "tags": []
+ },
+ {
+  "id": "elevaciones-de-talones-en-maquina-de-pie",
+  "name": "Elevaciones de talones en máquina de pie",
+  "muscle": "gemelos",
+  "pattern": "pierna",
+  "equipment": "maquina",
+  "home": false,
+  "video": null,
+  "source": "base",
+  "tags": []
+ },
+ {
+  "id": "curl-inclinado-con-mancuernas",
+  "name": "Curl inclinado con mancuernas",
+  "muscle": "biceps",
+  "pattern": "tiron",
+  "equipment": "mancuernas",
+  "home": false,
+  "video": null,
+  "source": "base",
+  "tags": []
+ },
+ {
+  "id": "curl-en-polea-baja-con-cuerda-martillo",
+  "name": "Curl en polea baja con cuerda (martillo)",
+  "muscle": "biceps",
+  "pattern": "tiron",
+  "equipment": "polea",
+  "home": false,
+  "video": null,
+  "source": "base",
+  "tags": []
+ },
+ {
+  "id": "curl-en-maquina-predicador",
+  "name": "Curl en máquina predicador",
+  "muscle": "biceps",
+  "pattern": "tiron",
+  "equipment": "maquina",
+  "home": false,
+  "video": null,
+  "source": "base",
+  "tags": []
+ },
+ {
+  "id": "press-banca-agarre-cerrado",
+  "name": "Press banca agarre cerrado",
+  "muscle": "triceps",
+  "pattern": "empuje",
+  "equipment": "barra",
+  "home": false,
+  "video": null,
+  "source": "base",
+  "tags": []
+ },
+ {
+  "id": "plancha-abdominal",
+  "name": "Plancha abdominal",
+  "muscle": "core",
+  "pattern": "core",
+  "equipment": "peso-corporal",
+  "home": true,
+  "video": null,
+  "source": "base",
+  "tags": []
+ },
+ {
+  "id": "crunch-abdominal",
+  "name": "Crunch abdominal",
+  "muscle": "core",
+  "pattern": "core",
+  "equipment": "peso-corporal",
+  "home": true,
+  "video": null,
+  "source": "base",
+  "tags": []
+ },
+ {
+  "id": "crunch-en-polea-alta",
+  "name": "Crunch en polea alta",
+  "muscle": "core",
+  "pattern": "core",
+  "equipment": "polea",
+  "home": false,
+  "video": null,
+  "source": "base",
+  "tags": []
+ },
+ {
+  "id": "elevaciones-de-piernas-colgado",
+  "name": "Elevaciones de piernas colgado",
+  "muscle": "core",
+  "pattern": "core",
+  "equipment": "peso-corporal",
+  "home": true,
+  "video": null,
+  "source": "base",
+  "tags": []
+ },
+ {
+  "id": "rueda-abdominal",
+  "name": "Rueda abdominal",
+  "muscle": "core",
+  "pattern": "core",
+  "equipment": "peso-corporal",
+  "home": true,
+  "video": null,
+  "source": "base",
+  "tags": []
+ },
+ {
+  "id": "pallof-press-en-polea",
+  "name": "Pallof press en polea",
+  "muscle": "core",
+  "pattern": "core",
+  "equipment": "polea",
+  "home": false,
+  "video": null,
+  "source": "base",
+  "tags": []
+ }
+]

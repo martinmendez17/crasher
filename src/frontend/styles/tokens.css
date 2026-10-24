@@ -1,0 +1,110 @@
+/* Tokens de diseño: colores, tipografía, espacios.
+   Modo claro por defecto; el modo oscuro se activa con data-theme="dark"
+   en <html> (lo controla Ajustes → Apariencia). */
+
+:root {
+  /* Superficies y texto (contrastes AA verificados) */
+  --bg: #f2f3f5;
+  --surface: #ffffff;
+  --surface-2: #e9ebee;
+  --border: #d5d9de;
+  --border-strong: #aeb4bc;
+  --text: #16191d;
+  --text-2: #3f4651;
+  --muted: #5c6470;
+
+  /* Acciones */
+  --primary: #16191d;
+  --on-primary: #ffffff;
+  --accent: #2459c2;
+  --focus: #2459c2;
+
+  /* Estados (siempre acompañados de texto o ícono) */
+  --success: #1b7340;
+  --success-bg: #e3f3e8;
+  --warning: #8a5a00;
+  --warning-bg: #fdf3dc;
+  --danger: #b42318;
+  --danger-bg: #fdecea;
+
+  /* Colores de discos olímpicos: identidad de cada día de la rutina */
+  --plate-1: #c8312e;
+  --plate-2: #2459c2;
+  --plate-3: #d9a300;
+  --plate-4: #2e8a4b;
+  --plate-5: #8a4fbf;
+  --plate-other: #7c838d;
+  --plate-hole: #16191d;
+
+  /* Gráficos */
+  --chart-line: #2459c2;
+  --chart-trend: #5c6470;
+  --chart-grid: #e3e6ea;
+  --chart-band: #e3f3e8;
+
+  /* Tipografía */
+  --font-body: "Barlow", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-display: "Barlow Condensed", "Arial Narrow", "DejaVu Sans Condensed", system-ui, sans-serif;
+
+  --fs-xs: 0.8125rem; /* 13px */
+  --fs-sm: 0.875rem; /* 14px */
+  --fs-md: 1rem; /* 16px */
+  --fs-lg: 1.125rem; /* 18px */
+  --fs-xl: 1.375rem; /* 22px */
+  --fs-2xl: 1.875rem; /* 30px */
+
+  /* Espacios y formas */
+  --sp-1: 4px;
+  --sp-2: 8px;
+  --sp-3: 12px;
+  --sp-4: 16px;
+  --sp-5: 24px;
+  --sp-6: 32px;
+  --radius-sm: 8px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --shadow-sheet: 0 -8px 32px rgba(22, 25, 29, 0.18);
+
+  --nav-h: 64px;
+  --header-h: 56px;
+  color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+  --bg: #17191c;
+  --surface: #202328;
+  --surface-2: #2a2e34;
+  --border: #3a3f47;
+  --border-strong: #5a616c;
+  --text: #eceef1;
+  --text-2: #c9ced6;
+  --muted: #a0a7b2;
+
+  --primary: #eceef1;
+  --on-primary: #17191c;
+  --accent: #82a6f5;
+  --focus: #82a6f5;
+
+  --success: #63cf91;
+  --success-bg: #1c3226;
+  --warning: #f0c35a;
+  --warning-bg: #3a3020;
+  --danger: #ff8a7e;
+  --danger-bg: #3d2322;
+
+  --plate-1: #e5484d;
+  --plate-2: #4f7fe0;
+  --plate-3: #b88a0e;
+  --plate-4: #36a060;
+  --plate-5: #9d6ed6;
+  --plate-other: #8c939e;
+  --plate-hole: #17191c;
+
+  --chart-line: #6f9af0;
+  --chart-trend: #a0a7b2;
+  --chart-grid: #30343b;
+  --chart-band: #1c3226;
+
+  --shadow-sheet: 0 -8px 32px rgba(0, 0, 0, 0.5);
+  color-scheme: dark;
+}

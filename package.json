@@ -1,0 +1,20 @@
+{
+  "name": "crasher00",
+  "private": true,
+  "version": "2.0.0",
+  "description": "Registro de entrenamientos de fuerza con modelos de rutina, catálogo de ejercicios y progreso.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "vite": "^6.0.0"
+  }
+}
