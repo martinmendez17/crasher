@@ -4,6 +4,7 @@ import { useRef } from "react";
 import { useData } from "../store.jsx";
 import { Icon } from "../icons.jsx";
 import { todayISO } from "../../backend/domain/utils.js";
+import { useInstall } from "../pwa.js";
 
 function download(name, text, type) {
   const url = URL.createObjectURL(new Blob([text], { type }));
@@ -20,6 +21,7 @@ export function SettingsPage() {
   const { settings, api, run, toast, confirm, sessions } = useData();
   const fileRef = useRef(null);
   const set = (patch) => run(() => api.settings.save(patch));
+  const { status: installStatus, install } = useInstall();
 
   const toggles = [
     ["showHints", "Mostrar metas sugeridas", "Muestra lo que hiciste la vez anterior y cuánto deberías hacer hoy."],
@@ -30,6 +32,42 @@ export function SettingsPage() {
 
   return (
     <>
+      <section className="section panel install">
+        <h2>Instalar en tu teléfono</h2>
+        {installStatus === "installed" && <p>Ya estás usando Crasher como app instalada. Funciona sin internet.</p>}
+        {installStatus === "prompt" && (
+          <>
+            <p className="hint">Queda con su ícono en la pantalla de inicio, se abre a pantalla completa y funciona sin internet.</p>
+            <button
+              className="btn btn-primary"
+              onClick={async () => {
+                if (await install()) toast("Crasher quedó instalada");
+              }}
+            >
+              <Icon name="download" /> Instalar app
+            </button>
+          </>
+        )}
+        {installStatus === "ios" && (
+          <ol className="install-steps">
+            <li>Abre esta página en <strong>Safari</strong>.</li>
+            <li>
+              Toca <strong>Compartir</strong> <Icon name="upload" width={16} height={16} className="inline-icon" /> en la barra de abajo.
+            </li>
+            <li>
+              Elige <strong>Agregar a pantalla de inicio</strong> y toca <strong>Agregar</strong>.
+            </li>
+          </ol>
+        )}
+        {installStatus === "manual" && (
+          <p className="hint">
+            Abre esta página en el navegador de tu teléfono. En Chrome (Android) toca el menú ⋮ y elige{" "}
+            <strong>Instalar app</strong> o <strong>Agregar a pantalla de inicio</strong>. En iPhone usa Safari: Compartir →{" "}
+            <strong>Agregar a pantalla de inicio</strong>.
+          </p>
+        )}
+      </section>
+
       <section className="section panel">
         <h2>Apariencia</h2>
         <div className="segmented settings-seg" role="group" aria-label="Tema">

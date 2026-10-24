@@ -20,6 +20,7 @@ Aplicación web para registrar entrenamientos de fuerza: eliges un modelo de rut
   La *Guía de volumen* muestra la tabla completa, con frecuencia, repeticiones y RIR recomendados.
 - **Historial**, exportación a **JSON** y **CSV**, e importación de respaldos.
 - **Modo claro y oscuro**, con contraste AA en ambos.
+- **Se instala como app en el teléfono (PWA):** queda con ícono propio, se abre a pantalla completa y funciona sin internet. En Android, Ajustes → *Instalar app*. En iPhone, en Safari: Compartir → *Agregar a pantalla de inicio*.
 
 Los datos se guardan en el navegador (`localStorage`). Si usabas la versión anterior (un solo `index.html`), tus rutinas e historial se migran solos la primera vez que abres esta versión.
 
@@ -49,7 +50,10 @@ El código está separado en **backend** (datos y reglas) y **frontend** (interf
 ```
 index.html                 Página base que carga la app
 vite.config.js             Configuración de Vite
-public/                    Archivos estáticos (ícono)
+public/                    Archivos que se publican tal cual
+├── manifest.webmanifest   Nombre, ícono y colores de la app instalada
+├── sw.js                  Service worker: guarda la app para usarla sin internet
+└── icons/                 Íconos de la app (192, 512, maskable y Apple)
 src/
 ├── backend/               ← "Backend": datos y lógica, sin interfaz
 │   ├── api.js             API asíncrona: ejercicios, rutinas, sesiones, ajustes, respaldo
@@ -73,6 +77,7 @@ src/
     ├── store.jsx          Estado global: carga datos desde la API
     ├── icons.jsx          Íconos SVG
     ├── format.js          Formatos de fechas y números
+    ├── pwa.js             Registro del service worker y botón "Instalar app"
     ├── components/        Piezas reutilizables (buscador de ejercicios, gráfico, hoja inferior…)
     ├── pages/             Una pantalla por archivo: Entrenar, Rutinas, Ejercicios, Progreso, Historial, Ajustes
     └── styles/            tokens.css (colores y tipografía), base, componentes y pantallas

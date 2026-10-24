@@ -407,3 +407,7 @@ a.list-row:hover { background: var(--surface-2); }
 .settings-seg button { min-height: 40px; }
 .danger-zone { border-color: var(--danger); }
 .about { margin-top: var(--sp-5); text-align: center; }
+
+/* Instalar como app */
+.install p + .btn { margin-top: var(--sp-3); }
+.install-steps { margin: 0; padding-left: 1.3em; display: flex; flex-direction: column; gap: var(--sp-2); }
