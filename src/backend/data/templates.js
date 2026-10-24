@@ -2,6 +2,7 @@
 // Son plantillas de solo lectura: cuando el usuario elige una, el backend crea
 // una copia editable en "Mis rutinas" (ver api/routines.js).
 //
+// goal (por día): "fuerza" o "hipertrofia" (ver data/trainingGoals.js).
 // cyclesPerWeek: cuántas veces por semana se completa el ciclo de días
 // (se usa para estimar el volumen semanal planificado).
 //
@@ -25,6 +26,7 @@ export const TEMPLATES = [
     days: [
       {
         name: "Push",
+        goal: "hipertrofia",
         focus: ["pecho", "hombros", "triceps"],
         exercises: [
           e("press-banca-con-barra", 4, "6-8"),
@@ -37,6 +39,7 @@ export const TEMPLATES = [
       },
       {
         name: "Pull",
+        goal: "hipertrofia",
         focus: ["espalda", "biceps", "hombros"],
         exercises: [
           e("dominadas", 3, "6-10"),
@@ -49,6 +52,7 @@ export const TEMPLATES = [
       },
       {
         name: "Legs",
+        goal: "hipertrofia",
         focus: ["cuadriceps", "isquios", "gluteos", "gemelos"],
         exercises: [
           e("sentadilla-con-barra", 4, "6-8"),
@@ -74,11 +78,12 @@ export const TEMPLATES = [
     days: [
       {
         name: "Upper A · Fuerza",
+        goal: "fuerza",
         focus: ["pecho", "espalda", "hombros", "biceps", "triceps"],
         exercises: [
-          e("press-banca-con-barra", 4, "5-7"),
-          e("remo-con-barra", 4, "6-8"),
-          e("press-militar-para-hombro", 3, "6-8"),
+          e("press-banca-con-barra", 4, "4-6"),
+          e("remo-con-barra", 4, "4-6"),
+          e("press-militar-para-hombro", 3, "4-6"),
           e("jalon-al-pecho-agarre-neutro", 3, "8-10"),
           e("curl-biceps-con-barra-de-pie", 2, "8-10"),
           e("triceps-polea-alta-con-barra", 2, "8-10"),
@@ -86,10 +91,11 @@ export const TEMPLATES = [
       },
       {
         name: "Lower A · Fuerza",
+        goal: "fuerza",
         focus: ["cuadriceps", "isquios", "gluteos", "gemelos", "core"],
         exercises: [
-          e("sentadilla-con-barra", 4, "5-7"),
-          e("peso-muerto-rumano-con-barra", 3, "6-8"),
+          e("sentadilla-con-barra", 4, "3-5"),
+          e("peso-muerto-rumano-con-barra", 3, "4-6"),
           e("prensa-horizontal", 3, "8-10"),
           e("femoral-maquina-tumbada", 3, "8-10"),
           e("elevaciones-de-talones-en-maquina-de-pie", 4, "8-12"),
@@ -98,6 +104,7 @@ export const TEMPLATES = [
       },
       {
         name: "Upper B · Hipertrofia",
+        goal: "hipertrofia",
         focus: ["pecho", "espalda", "hombros", "biceps", "triceps"],
         exercises: [
           e("press-inclinado-con-mancuernas", 3, "8-12"),
@@ -111,6 +118,7 @@ export const TEMPLATES = [
       },
       {
         name: "Lower B · Hipertrofia",
+        goal: "hipertrofia",
         focus: ["gluteos", "cuadriceps", "isquios", "gemelos"],
         exercises: [
           e("hip-thrust-con-barra", 4, "8-10"),
@@ -136,6 +144,7 @@ export const TEMPLATES = [
     days: [
       {
         name: "Pecho y espalda",
+        goal: "hipertrofia",
         focus: ["pecho", "espalda"],
         exercises: [
           e("contractor-de-pecho-pec-deck", 1, "6-10", { note: "Superserie con el siguiente, sin descanso" }),
@@ -147,16 +156,18 @@ export const TEMPLATES = [
       },
       {
         name: "Piernas",
+        goal: "hipertrofia",
         focus: ["cuadriceps", "isquios", "gemelos"],
         exercises: [
           e("cuadriceps-en-maquina", 1, "8-15", { note: "Superserie con la prensa" }),
           e("prensa-inclinada", 1, "8-15"),
           e("femoral-maquina-tumbada", 1, "6-10"),
-          e("elevaciones-de-talones-en-maquina-de-pie", 1, "12-20"),
+          e("elevaciones-de-talones-en-maquina-de-pie", 1, "10-15"),
         ],
       },
       {
         name: "Hombros y brazos",
+        goal: "hipertrofia",
         focus: ["hombros", "biceps", "triceps"],
         exercises: [
           e("elevaciones-laterales-con-mancuernas", 1, "6-10"),
@@ -181,6 +192,7 @@ export const TEMPLATES = [
     days: [
       {
         name: "Full Body A",
+        goal: "hipertrofia",
         focus: ["cuadriceps", "pecho", "espalda", "hombros", "biceps", "core"],
         exercises: [
           e("sentadilla-con-barra", 3, "6-8"),
@@ -193,6 +205,7 @@ export const TEMPLATES = [
       },
       {
         name: "Full Body B",
+        goal: "hipertrofia",
         focus: ["isquios", "hombros", "espalda", "cuadriceps", "triceps", "core"],
         exercises: [
           e("peso-muerto-rumano-con-barra", 3, "8-10"),
@@ -205,6 +218,7 @@ export const TEMPLATES = [
       },
       {
         name: "Full Body C",
+        goal: "hipertrofia",
         focus: ["gluteos", "pecho", "espalda", "cuadriceps", "hombros", "gemelos"],
         exercises: [
           e("hip-thrust-con-barra", 3, "8-10"),
@@ -230,6 +244,7 @@ export const TEMPLATES = [
     days: [
       {
         name: "Pecho y espalda",
+        goal: "hipertrofia",
         focus: ["pecho", "espalda"],
         exercises: [
           e("press-banca-con-barra", 4, "6-10"),
@@ -242,7 +257,8 @@ export const TEMPLATES = [
       },
       {
         name: "Hombros y brazos",
-        focus: ["hombros", "biceps", "triceps"],
+        goal: "hipertrofia",
+        focus: ["hombros", "biceps", "triceps", "antebrazo"],
         exercises: [
           e("press-militar-para-hombro", 4, "6-10"),
           e("elevaciones-laterales-con-mancuernas", 4, "10-15"),
@@ -251,10 +267,12 @@ export const TEMPLATES = [
           e("press-frances-con-barra-ez-para-triceps", 3, "8-10"),
           e("curl-biceps-concentrado-a-una-mano", 3, "10-12"),
           e("triceps-polea-alta-con-cuerda", 3, "10-12"),
+          e("curl-de-muneca-con-barra", 3, "10-15"),
         ],
       },
       {
         name: "Piernas",
+        goal: "hipertrofia",
         focus: ["cuadriceps", "isquios", "gemelos", "core"],
         exercises: [
           e("sentadilla-con-barra", 4, "6-10"),
@@ -280,6 +298,7 @@ export const TEMPLATES = [
     days: [
       {
         name: "Pecho",
+        goal: "hipertrofia",
         focus: ["pecho"],
         exercises: [
           e("press-banca-con-barra", 4, "6-10"),
@@ -291,6 +310,7 @@ export const TEMPLATES = [
       },
       {
         name: "Espalda",
+        goal: "hipertrofia",
         focus: ["espalda", "trapecio"],
         exercises: [
           e("dominadas", 4, "6-10"),
@@ -299,10 +319,12 @@ export const TEMPLATES = [
           e("remo-con-mancuerna-a-un-brazo", 3, "10-12"),
           e("pullover-cuerda-polea-alta", 3, "12-15"),
           e("encogimientos-con-mancuernas", 3, "10-15"),
+          e("elevaciones-y-en-banco-inclinado", 2, "10-12"),
         ],
       },
       {
         name: "Piernas",
+        goal: "hipertrofia",
         focus: ["cuadriceps", "isquios", "gluteos", "gemelos"],
         exercises: [
           e("sentadilla-con-barra", 4, "6-10"),
@@ -315,6 +337,7 @@ export const TEMPLATES = [
       },
       {
         name: "Hombros",
+        goal: "hipertrofia",
         focus: ["hombros"],
         exercises: [
           e("press-militar-para-hombro", 4, "6-10"),
@@ -326,7 +349,8 @@ export const TEMPLATES = [
       },
       {
         name: "Brazos",
-        focus: ["biceps", "triceps"],
+        goal: "hipertrofia",
+        focus: ["biceps", "triceps", "antebrazo"],
         exercises: [
           e("curl-biceps-con-barra-de-pie", 3, "8-10"),
           e("press-banca-agarre-cerrado", 3, "6-10"),
@@ -334,6 +358,8 @@ export const TEMPLATES = [
           e("triceps-polea-alta-con-cuerda-por-encima-de-la-cabeza", 3, "10-12"),
           e("curl-biceps-con-mancuernas-tipo-martillo", 3, "10-12"),
           e("triceps-polea-alta-con-cuerda", 3, "12-15"),
+          e("curl-inverso-con-barra-ez", 3, "10-12"),
+          e("curl-de-muneca-con-barra", 3, "10-15"),
         ],
       },
     ],
@@ -351,6 +377,7 @@ export const TEMPLATES = [
     days: [
       {
         name: "Push",
+        goal: "hipertrofia",
         focus: ["pecho", "hombros", "triceps"],
         exercises: [
           e("elevaciones-laterales-a-un-brazo-desde-polea-baja", 3, "8-12", { alias: "Lateral polea (derecha)" }),
@@ -365,6 +392,7 @@ export const TEMPLATES = [
       },
       {
         name: "Pull",
+        goal: "hipertrofia",
         focus: ["espalda", "trapecio", "biceps", "hombros"],
         exercises: [
           e("jalon-al-pecho-agarre-neutro", 3, "8-12", { alias: "Jalón unilateral (derecho)" }),
@@ -379,6 +407,7 @@ export const TEMPLATES = [
       },
       {
         name: "Arm",
+        goal: "hipertrofia",
         focus: ["hombros", "biceps", "triceps"],
         exercises: [
           e("elevaciones-laterales-a-un-brazo-desde-polea-baja", 3, "8-12", { alias: "Deltoide lateral (derecho)" }),
@@ -394,6 +423,7 @@ export const TEMPLATES = [
       },
       {
         name: "Leg",
+        goal: "hipertrofia",
         focus: ["cuadriceps", "gluteos", "isquios", "aductores", "core"],
         exercises: [
           e("sentadilla-en-maquina-hack", 3, "8-12", { alias: "Hack" }),

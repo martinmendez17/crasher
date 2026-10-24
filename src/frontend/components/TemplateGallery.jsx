@@ -6,6 +6,7 @@ import { Plate } from "./Plate.jsx";
 import { Icon } from "../icons.jsx";
 import { MUSCLE_LABEL } from "../../backend/data/catalogs.js";
 import { navigate } from "../router.jsx";
+import { GOALS } from "../../backend/data/trainingGoals.js";
 
 export function TemplateGallery({ goToEditor = true }) {
   const { templates, exById, api, run } = useData();
@@ -47,6 +48,7 @@ export function TemplateGallery({ goToEditor = true }) {
                       <Plate index={i} size={20} />
                       <strong>{d.name}</strong>
                       <span className="hint">{d.focus.map((m) => MUSCLE_LABEL[m]).join(", ")}</span>
+                      {GOALS[d.goal] && <span className={`badge goal-${d.goal}`}>{GOALS[d.goal].short}</span>}
                     </div>
                     <ul>
                       {d.exercises.map((e, j) => (

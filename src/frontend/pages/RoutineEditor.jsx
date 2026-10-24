@@ -16,6 +16,8 @@ import { VolumeBars } from "../components/VolumeBars.jsx";
 import { FatigueNotice } from "../components/FatigueNotice.jsx";
 import { Link } from "../router.jsx";
 import { fmtNum } from "../format.js";
+import { RepTag } from "../components/RepTag.jsx";
+import { GOALS, GOAL_LIST, DEFAULT_GOAL, classifyReps, repsAlertApplies } from "../../backend/data/trainingGoals.js";
 
 const CYCLE_OPTIONS = [0.5, 1, 1.5, 2, 3];
 
@@ -151,6 +153,21 @@ export function RoutineEditor({ id }) {
             </button>
           </div>
 
+          <GoalPicker
+            day={d}
+            exById={exById}
+            onGoal={(g) => change((x) => { x.days[di].goal = g; return x; })}
+            onApply={(g) =>
+              change((x) => {
+                x.days[di].exercises.forEach((it) => {
+                  const m = exById.get(it.exerciseId)?.muscle;
+                  if (repsAlertApplies(m) && classifyReps(it.reps) !== g) it.reps = GOALS[g].defaultReps;
+                });
+                return x;
+              })
+            }
+          />
+
           <div className="focus-picker">
             <span className="label" id={`focus-${d.id}`}>
               Músculos de este día
@@ -193,6 +210,7 @@ export function RoutineEditor({ id }) {
                         {ex ? `, ${EQUIPMENT_LABEL[ex.equipment].toLowerCase()}` : ""}
                         {it.note ? `. ${it.note}` : ""}
                       </span>
+                      <RepTag reps={it.reps} muscle={ex?.muscle} />
                     </div>
                     <div className="item-dose">
                       <label className="dose">
@@ -244,7 +262,7 @@ export function RoutineEditor({ id }) {
 
       <button
         className="btn btn-block btn-dashed"
-        onClick={() => change((x) => { x.days.push({ id: uid("day"), name: `Día ${x.days.length + 1}`, focus: [], exercises: [] }); return x; })}
+        onClick={() => change((x) => { x.days.push({ id: uid("day"), name: `Día ${x.days.length + 1}`, goal: DEFAULT_GOAL, focus: [], exercises: [] }); return x; })}
       >
         <Icon name="plus" /> Agregar día
       </button>
@@ -254,7 +272,7 @@ export function RoutineEditor({ id }) {
           <h2>Volumen semanal planificado</h2>
           <p>
             Series por semana que suma esta rutina para cada músculo, comparadas con las referencias de volumen efectivo.{" "}
-            <Link to="/volumen">Ver la guía de volumen</Link>
+            <Link to="/volumen">Ver la guía de entrenamiento</Link>
           </p>
         </div>
         <div className="field cycles-field">
@@ -327,6 +345,36 @@ export function RoutineEditor({ id }) {
             setEditItem(null);
           }}
         />
+      )}
+    </div>
+  );
+}
+
+function GoalPicker({ day, exById, onGoal, onApply }) {
+  const goal = GOALS[day.goal] || GOALS[DEFAULT_GOAL];
+  const mismatched = day.exercises.filter((it) => {
+    const m = exById.get(it.exerciseId)?.muscle;
+    return repsAlertApplies(m) && classifyReps(it.reps) !== goal.id;
+  }).length;
+  return (
+    <div className="goal-picker">
+      <span className="label" id={`goal-${day.id}`}>
+        Objetivo del día
+      </span>
+      <div className="segmented" role="group" aria-labelledby={`goal-${day.id}`}>
+        {GOAL_LIST.map((g) => (
+          <button key={g.id} aria-pressed={goal.id === g.id} onClick={() => onGoal(g.id)}>
+            {g.label}
+          </button>
+        ))}
+      </div>
+      <span className="hint">
+        Carga {goal.load.charAt(0).toLowerCase() + goal.load.slice(1)}, {goal.repsText} repeticiones. {goal.tip}
+      </span>
+      {mismatched > 0 && (
+        <button className="btn btn-sm goal-apply" onClick={() => onApply(goal.id)}>
+          Ajustar {mismatched === 1 ? "1 ejercicio" : `${mismatched} ejercicios`} a {goal.defaultReps} repeticiones
+        </button>
       )}
     </div>
   );

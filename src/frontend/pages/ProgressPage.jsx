@@ -155,7 +155,7 @@ export function ProgressPage() {
           <h2>Volumen semanal por músculo</h2>
           <p>
             Series de los últimos 7 días comparadas con las referencias de volumen efectivo. Pasar el máximo recuperable
-            acumula fatiga. <Link to="/volumen">Ver la guía de volumen</Link>
+            acumula fatiga. <Link to="/volumen">Ver la guía de entrenamiento</Link>
           </p>
         </div>
         {warnings.length > 0 && <FatigueNotice warnings={warnings} />}

@@ -1,4 +1,4 @@
-// Guía de volumen: la tabla de referencia completa y qué significa cada término.
+// Guía de entrenamiento: tabla de volumen por músculo, objetivos (fuerza / hipertrofia) y cómo usarlos.
 
 import { useMemo } from "react";
 import { useData } from "../store.jsx";
@@ -7,6 +7,7 @@ import { LANDMARKS, VOLUME_SOURCE, rangeText, freqText } from "../../backend/dat
 import { weeklyVolume, volumeZone } from "../../backend/domain/volume.js";
 import { ZoneBadge } from "../components/VolumeBars.jsx";
 import { fmtNum } from "../format.js";
+import { GOAL_LIST, REPS_ALERT_MESSAGE } from "../../backend/data/trainingGoals.js";
 
 const TERMS = [
   ["MV", "Volumen de mantenimiento", "Lo mínimo para no perder músculo ni fuerza. Útil en semanas de descarga o cuando priorizas otro músculo."],
@@ -82,6 +83,44 @@ export function VolumeGuidePage() {
             </tbody>
           </table>
         </div>
+      </section>
+
+      <section className="section">
+        <div className="section-head stack">
+          <h2>Fuerza o hipertrofia</h2>
+          <p>Cada día de tu rutina tiene un objetivo. Lo eliges en el editor de rutinas y define la carga y las repeticiones.</p>
+        </div>
+        <div className="table-wrap guide-table">
+          <table className="data goals-table">
+            <thead>
+              <tr>
+                <th scope="col">Objetivo</th>
+                <th scope="col">Carga</th>
+                <th scope="col">Repeticiones</th>
+              </tr>
+            </thead>
+            <tbody>
+              {GOAL_LIST.map((g) => (
+                <tr key={g.id}>
+                  <td>
+                    <span className={`badge goal-${g.id}`}>{g.label}</span>
+                  </td>
+                  <td>{g.load}</td>
+                  <td>{g.repsText}</td>
+                </tr>
+              ))}
+              <tr>
+                <td>Fuerza-resistencia</td>
+                <td>Ligera-moderada (40-60 % 1RM)</td>
+                <td>Más de 15</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p className="hint guide-note">
+          Sobre 15 repeticiones ya no ganas fuerza ni músculo, y la app te avisa: “{REPS_ALERT_MESSAGE}”. Los ejercicios de
+          core que se miden en segundos, como la plancha, no cuentan.
+        </p>
       </section>
 
       <section className="section panel">

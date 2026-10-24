@@ -22,6 +22,7 @@ export function legacyMuscleToId(label) {
   if (k.startsWith("pecho")) return "pecho";
   if (k.startsWith("tricep")) return "triceps";
   if (k.startsWith("bicep")) return "biceps";
+  if (k.startsWith("antebrazo") || k.startsWith("forearm")) return "antebrazo";
   if (k.startsWith("trapecio") || k.startsWith("trap")) return "trapecio";
   if (k.startsWith("espalda") || k.startsWith("dorsal")) return "espalda";
   if (k.startsWith("cuadri")) return "cuadriceps";
@@ -112,7 +113,7 @@ export function convertLegacy(legacy, catalogIds) {
       const c = customExercises.find((x) => x.id === i.exerciseId);
       return c ? c.muscle : null;
     }).filter(Boolean))];
-    return { id: uid("day"), name: dayName, focus, exercises: items };
+    return { id: uid("day"), name: dayName, goal: "hipertrofia", focus, exercises: items };
   });
 
   const routine = {

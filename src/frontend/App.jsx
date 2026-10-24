@@ -31,7 +31,7 @@ const ROUTES = [
   ["/progreso", "Progreso", null, () => <ProgressPage />],
   ["/historial", "Historial", null, () => <HistoryPage />],
   ["/ajustes", "Ajustes", null, () => <SettingsPage />],
-  ["/volumen", "Guía de volumen", "/progreso", () => <VolumeGuidePage />],
+  ["/volumen", "Guía de entrenamiento", "/progreso", () => <VolumeGuidePage />],
 ];
 
 export function App() {

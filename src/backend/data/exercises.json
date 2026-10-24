@@ -1665,5 +1665,170 @@
   "video": null,
   "source": "base",
   "tags": []
+ },
+ {
+  "id": "encogimientos-en-multipower",
+  "name": "Encogimientos en multipower",
+  "muscle": "trapecio",
+  "pattern": "tiron",
+  "equipment": "multipower",
+  "home": false,
+  "video": null,
+  "source": "base",
+  "tags": []
+ },
+ {
+  "id": "encogimientos-en-maquina",
+  "name": "Encogimientos en máquina",
+  "muscle": "trapecio",
+  "pattern": "tiron",
+  "equipment": "maquina",
+  "home": false,
+  "video": null,
+  "source": "base",
+  "tags": []
+ },
+ {
+  "id": "encogimientos-en-polea-baja",
+  "name": "Encogimientos en polea baja",
+  "muscle": "trapecio",
+  "pattern": "tiron",
+  "equipment": "polea",
+  "home": false,
+  "video": null,
+  "source": "base",
+  "tags": []
+ },
+ {
+  "id": "encogimientos-con-barra-por-detras",
+  "name": "Encogimientos con barra por detrás",
+  "muscle": "trapecio",
+  "pattern": "tiron",
+  "equipment": "barra",
+  "home": false,
+  "video": null,
+  "source": "base",
+  "tags": []
+ },
+ {
+  "id": "encogimientos-inclinados-con-mancuernas",
+  "name": "Encogimientos inclinados con mancuernas",
+  "muscle": "trapecio",
+  "pattern": "tiron",
+  "equipment": "mancuernas",
+  "home": false,
+  "video": null,
+  "source": "base",
+  "tags": []
+ },
+ {
+  "id": "elevaciones-y-en-banco-inclinado",
+  "name": "Elevaciones Y en banco inclinado",
+  "muscle": "trapecio",
+  "pattern": "tiron",
+  "equipment": "mancuernas",
+  "home": false,
+  "video": null,
+  "source": "base",
+  "tags": []
+ },
+ {
+  "id": "remo-alto-con-barra-high-pull",
+  "name": "Remo alto con barra (high pull)",
+  "muscle": "trapecio",
+  "pattern": "tiron",
+  "equipment": "barra",
+  "home": false,
+  "video": null,
+  "source": "base",
+  "tags": []
+ },
+ {
+  "id": "curl-de-muneca-con-barra",
+  "name": "Curl de muñeca con barra",
+  "muscle": "antebrazo",
+  "pattern": "tiron",
+  "equipment": "barra",
+  "home": false,
+  "video": null,
+  "source": "base",
+  "tags": []
+ },
+ {
+  "id": "curl-de-muneca-con-mancuernas",
+  "name": "Curl de muñeca con mancuernas",
+  "muscle": "antebrazo",
+  "pattern": "tiron",
+  "equipment": "mancuernas",
+  "home": false,
+  "video": null,
+  "source": "base",
+  "tags": []
+ },
+ {
+  "id": "curl-de-muneca-inverso-con-barra",
+  "name": "Curl de muñeca inverso con barra",
+  "muscle": "antebrazo",
+  "pattern": "tiron",
+  "equipment": "barra",
+  "home": false,
+  "video": null,
+  "source": "base",
+  "tags": []
+ },
+ {
+  "id": "curl-inverso-con-barra-ez",
+  "name": "Curl inverso con barra EZ",
+  "muscle": "antebrazo",
+  "pattern": "tiron",
+  "equipment": "barra",
+  "home": false,
+  "video": null,
+  "source": "base",
+  "tags": []
+ },
+ {
+  "id": "curl-zottman-con-mancuernas",
+  "name": "Curl Zottman con mancuernas",
+  "muscle": "antebrazo",
+  "pattern": "tiron",
+  "equipment": "mancuernas",
+  "home": false,
+  "video": null,
+  "source": "base",
+  "tags": []
+ },
+ {
+  "id": "rodillo-de-muneca-wrist-roller",
+  "name": "Rodillo de muñeca (wrist roller)",
+  "muscle": "antebrazo",
+  "pattern": "tiron",
+  "equipment": "disco",
+  "home": false,
+  "video": null,
+  "source": "base",
+  "tags": []
+ },
+ {
+  "id": "curl-de-muneca-en-polea-baja",
+  "name": "Curl de muñeca en polea baja",
+  "muscle": "antebrazo",
+  "pattern": "tiron",
+  "equipment": "polea",
+  "home": false,
+  "video": null,
+  "source": "base",
+  "tags": []
+ },
+ {
+  "id": "pronacion-y-supinacion-con-mancuerna",
+  "name": "Pronación y supinación con mancuerna",
+  "muscle": "antebrazo",
+  "pattern": "tiron",
+  "equipment": "mancuernas",
+  "home": false,
+  "video": null,
+  "source": "base",
+  "tags": []
  }
 ]

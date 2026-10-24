@@ -8,7 +8,13 @@ Aplicación web para registrar entrenamientos de fuerza: eliges un modelo de rut
 
 - **Modelos de entrenamiento editables:** Push / Pull / Legs, Upper / Lower, Heavy Duty (Mike Mentzer), Full Body, Arnold Split, Weider (un músculo por día) y la rutina original Push / Pull / Arm / Leg. Al elegir uno se crea una copia en *Mis rutinas* y puedes cambiar ejercicios, series, repeticiones y días.
 - **Elegir el día según sus músculos:** cada día tiene marcados sus músculos (pecho, espalda, glúteos…), y al agregar ejercicios el catálogo muestra primero los que corresponden.
-- **Catálogo de 147 ejercicios:** 104 de la *Enciclopedia de Ejercicios* de Manuel Escalera, cada uno con su video de técnica, más 43 básicos que la enciclopedia no incluye (pecho, dominadas, sentadilla con barra, core…). También puedes crear los tuyos.
+- **Catálogo de 162 ejercicios:** 104 de la *Enciclopedia de Ejercicios* de Manuel Escalera, cada uno con su video de técnica, más 58 básicos que la enciclopedia no incluye (pecho, dominadas, sentadilla con barra, trapecio, antebrazo, core…). También puedes crear los tuyos.
+- **Objetivo por día: fuerza máxima o hipertrofia.** Cada día tiene su objetivo:
+  - **Fuerza máxima:** carga alta (1-6 RM), 1-6 repeticiones.
+  - **Hipertrofia:** carga moderada (6-12 RM), 6-12 repeticiones.
+
+  Cada ejercicio muestra a qué objetivo corresponde su rango de repeticiones, y un botón ajusta todo el día al rango del objetivo.
+- **Alerta de más de 15 repeticiones:** sobre 15 reps (fuerza-resistencia) la app avisa *“No vas a progresar, skinny”*. No aplica a ejercicios de core medidos en segundos.
 - **Sobrecarga progresiva:** la app sugiere la meta de cada serie con *doble progresión*: si llegaste al tope del rango de repeticiones, sube el peso; si no, suma una repetición.
 - **Temporizador de descanso**, que arranca al marcar una serie como hecha.
 - **Progreso:** gráfico por ejercicio (peso máximo, 1RM estimado o volumen) con línea de tendencia.
@@ -69,6 +75,7 @@ src/
 │       ├── exercises.json Catálogo de ejercicios (con links de video)
 │       ├── templates.js   Modelos de entrenamiento
 │       ├── volumeLandmarks.js  Tabla de referencia de volumen por músculo
+│       ├── trainingGoals.js    Objetivos fuerza / hipertrofia y alerta de más de 15 reps
 │       └── catalogs.js    Músculos, equipos y patrones de movimiento
 └── frontend/              ← "Frontend": interfaz en React
     ├── main.jsx           Punto de entrada

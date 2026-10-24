@@ -7,6 +7,7 @@
 import BUILTIN_EXERCISES from "./data/exercises.json";
 import { TEMPLATES } from "./data/templates.js";
 import { PATTERN_BY_MUSCLE, MUSCLE_LABEL } from "./data/catalogs.js";
+import { GOALS, DEFAULT_GOAL } from "./data/trainingGoals.js";
 import * as store from "./storage/localStore.js";
 import { clone, uid, slugify, todayISO, nameKey } from "./domain/utils.js";
 import { e1rm } from "./domain/progression.js";
@@ -151,6 +152,7 @@ function routineFromTemplate(t) {
     days: t.days.map((d) => ({
       id: uid("day"),
       name: d.name,
+      goal: d.goal || DEFAULT_GOAL,
       focus: [...d.focus],
       exercises: d.exercises.map((e) => ({ id: uid("it"), ...clone(e) })),
     })),
@@ -164,6 +166,7 @@ function validateRoutine(r) {
   r.cyclesPerWeek = Number.isFinite(c) && c > 0 ? Math.min(c, 7) : 1;
   r.days.forEach((d, i) => {
     if (!String(d.name || "").trim()) d.name = `Día ${i + 1}`;
+    if (!GOALS[d.goal]) d.goal = DEFAULT_GOAL;
     d.exercises = (d.exercises || []).map((it) => ({
       ...it,
       sets: Math.max(1, Math.min(20, parseInt(it.sets, 10) || 1)),
@@ -215,7 +218,7 @@ const routines = {
       cyclesPerWeek: 1,
       createdAt: Date.now(),
       updatedAt: Date.now(),
-      days: [{ id: uid("day"), name: "Día 1", focus: [], exercises: [] }],
+      days: [{ id: uid("day"), name: "Día 1", goal: DEFAULT_GOAL, focus: [], exercises: [] }],
     };
     db.routines.push(r);
     db.activeRoutineId = r.id;

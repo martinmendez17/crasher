@@ -411,3 +411,31 @@ a.list-row:hover { background: var(--surface-2); }
 /* Instalar como app */
 .install p + .btn { margin-top: var(--sp-3); }
 .install-steps { margin: 0; padding-left: 1.3em; display: flex; flex-direction: column; gap: var(--sp-2); }
+
+/* Objetivo de entrenamiento (fuerza / hipertrofia) */
+.badge.goal-fuerza { background: var(--primary); color: var(--on-primary); }
+.badge.goal-hipertrofia { background: var(--zone-eff); color: var(--accent); }
+.goal-picker { display: flex; flex-direction: column; align-items: flex-start; gap: 6px; }
+.goal-picker .segmented { max-width: 100%; }
+.goal-apply { margin-top: 2px; }
+.goal-line { display: flex; flex-wrap: wrap; align-items: center; gap: var(--sp-2); margin-top: calc(-1 * var(--sp-2)); font-size: var(--fs-sm); color: var(--text-2); }
+.goal-line .badge { font-size: var(--fs-sm); padding: 3px 10px; }
+.item-main .badge { align-self: flex-start; margin-top: 4px; }
+.rep-alert { white-space: normal; }
+.set-row.too-many { background: var(--danger-bg); }
+.set-row.too-many .set-input { border-color: var(--danger); }
+.reps-alert {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  margin: -2px 0 2px;
+  padding: 6px 10px;
+  border-radius: var(--radius-sm);
+  background: var(--danger-bg);
+  color: var(--danger);
+  font-size: var(--fs-sm);
+}
+.reps-alert svg { width: 18px; height: 18px; flex-shrink: 0; margin-top: 1px; }
+.template-day-name .badge { margin-left: auto; }
+.goals-table td:first-child { font-weight: 600; }
+.guide-note { margin-top: var(--sp-2); }

@@ -1,6 +1,6 @@
 // Registro de un entrenamiento: series, metas sugeridas y descanso.
 
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import { Fragment, useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useData } from "../store.jsx";
 import { navigate } from "../router.jsx";
 import { Icon } from "../icons.jsx";
@@ -10,6 +10,7 @@ import { ExercisePicker } from "../components/ExercisePicker.jsx";
 import { techniqueUrl } from "../components/ExerciseBrowser.jsx";
 import { MUSCLE_LABEL } from "../../backend/data/catalogs.js";
 import { LANDMARKS } from "../../backend/data/volumeLandmarks.js";
+import { GOALS, DEFAULT_GOAL, REPS_ALERT, REPS_ALERT_MESSAGE, REPS_ALERT_HELP, repsAlertApplies } from "../../backend/data/trainingGoals.js";
 import { lastPerformance, suggestTarget, compareSet } from "../../backend/domain/progression.js";
 import { todayISO, uid } from "../../backend/domain/utils.js";
 import { relDay, fmtNum, plural } from "../format.js";
@@ -187,6 +188,16 @@ export function WorkoutPage({ routineId, dayId }) {
         </label>
       </header>
 
+      {(() => {
+        const g = GOALS[day.goal] || GOALS[DEFAULT_GOAL];
+        return (
+          <p className={`goal-line goal-${g.id}`}>
+            <span className={`badge goal-${g.id}`}>{g.label}</span>
+            Carga {g.load.charAt(0).toLowerCase() + g.load.slice(1)}, {g.repsText} repeticiones.
+          </p>
+        );
+      })()}
+
       {w.exercises.length === 0 && (
         <div className="empty panel">
           <h2>Este día no tiene ejercicios</h2>
@@ -315,6 +326,7 @@ function ExerciseBlock({ ex, sessions, settings, exInfo, onChange, onMenu, onSet
       Object.assign(e.sets[i], { weight, reps, done: true });
       return e;
     });
+    if (repsAlertApplies(ex.muscle) && Number(reps) > REPS_ALERT) toast(`${REPS_ALERT_MESSAGE} ${REPS_ALERT_HELP}`, "error");
     onSetDone();
   };
 
@@ -382,8 +394,10 @@ function ExerciseBlock({ ex, sessions, settings, exInfo, onChange, onMenu, onSet
         {ex.sets.map((s, i) => {
           const { prev: p, target: t } = targets[i];
           const cmp = s.done ? compareSet(s, p) : null;
+          const tooMany = repsAlertApplies(ex.muscle) && Number(s.reps) > REPS_ALERT;
           return (
-            <div key={i} className={`set-row ${s.done ? "is-done" : ""}`}>
+            <Fragment key={i}>
+            <div className={`set-row ${s.done ? "is-done" : ""} ${tooMany ? "too-many" : ""}`}>
               <span className="set-n num">
                 {i + 1}
               </span>
@@ -453,6 +467,15 @@ function ExerciseBlock({ ex, sessions, settings, exInfo, onChange, onMenu, onSet
                 <Icon name="check" />
               </button>
             </div>
+            {tooMany && (
+              <p className="reps-alert" role="alert">
+                <Icon name="alert" />
+                <span>
+                  <strong>{REPS_ALERT_MESSAGE}</strong> {REPS_ALERT_HELP}
+                </span>
+              </p>
+            )}
+            </Fragment>
           );
         })}
       </div>
