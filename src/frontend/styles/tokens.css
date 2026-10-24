@@ -42,6 +42,13 @@
   --chart-grid: #e3e6ea;
   --chart-band: #e3f3e8;
 
+  /* Zonas de volumen semanal */
+  --zone-eff: #dde7fa;
+  --zone-opt: #c6e8d2;
+  --zone-high: #f9e2a8;
+  --zone-over: #f6c6bf;
+  --zone-ink: #16191d;
+
   /* Tipografía */
   --font-body: "Barlow", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   --font-display: "Barlow Condensed", "Arial Narrow", "DejaVu Sans Condensed", system-ui, sans-serif;
@@ -104,6 +111,12 @@
   --chart-trend: #a0a7b2;
   --chart-grid: #30343b;
   --chart-band: #1c3226;
+
+  --zone-eff: #263450;
+  --zone-opt: #1f4430;
+  --zone-high: #54421a;
+  --zone-over: #5a2a25;
+  --zone-ink: #eceef1;
 
   --shadow-sheet: 0 -8px 32px rgba(0, 0, 0, 0.5);
   color-scheme: dark;

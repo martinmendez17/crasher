@@ -11,6 +11,7 @@ import { ExercisesPage } from "./pages/ExercisesPage.jsx";
 import { ProgressPage } from "./pages/ProgressPage.jsx";
 import { HistoryPage } from "./pages/HistoryPage.jsx";
 import { SettingsPage } from "./pages/SettingsPage.jsx";
+import { VolumeGuidePage } from "./pages/VolumeGuidePage.jsx";
 
 const NAV = [
   { to: "/entrenar", label: "Entrenar", icon: "dumbbell" },
@@ -30,6 +31,7 @@ const ROUTES = [
   ["/progreso", "Progreso", null, () => <ProgressPage />],
   ["/historial", "Historial", null, () => <HistoryPage />],
   ["/ajustes", "Ajustes", null, () => <SettingsPage />],
+  ["/volumen", "Guía de volumen", "/progreso", () => <VolumeGuidePage />],
 ];
 
 export function App() {

@@ -22,7 +22,8 @@ export function legacyMuscleToId(label) {
   if (k.startsWith("pecho")) return "pecho";
   if (k.startsWith("tricep")) return "triceps";
   if (k.startsWith("bicep")) return "biceps";
-  if (k.startsWith("espalda") || k.startsWith("trapecio") || k.startsWith("dorsal")) return "espalda";
+  if (k.startsWith("trapecio") || k.startsWith("trap")) return "trapecio";
+  if (k.startsWith("espalda") || k.startsWith("dorsal")) return "espalda";
   if (k.startsWith("cuadri")) return "cuadriceps";
   if (k.startsWith("isquio") || k.startsWith("femoral")) return "isquios";
   if (k.startsWith("glute")) return "gluteos";

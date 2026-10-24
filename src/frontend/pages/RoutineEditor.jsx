@@ -11,6 +11,13 @@ import { ExercisePicker } from "../components/ExercisePicker.jsx";
 import { techniqueUrl } from "../components/ExerciseBrowser.jsx";
 import { MUSCLES, MUSCLE_LABEL, EQUIPMENT_LABEL } from "../../backend/data/catalogs.js";
 import { uid } from "../../backend/domain/utils.js";
+import { plannedVolume, fatigueWarnings } from "../../backend/domain/volume.js";
+import { VolumeBars } from "../components/VolumeBars.jsx";
+import { FatigueNotice } from "../components/FatigueNotice.jsx";
+import { Link } from "../router.jsx";
+import { fmtNum } from "../format.js";
+
+const CYCLE_OPTIONS = [0.5, 1, 1.5, 2, 3];
 
 export function RoutineEditor({ id }) {
   const { routines, activeRoutineId, exById, api, run, toast, confirm, reload } = useData();
@@ -67,6 +74,8 @@ export function RoutineEditor({ id }) {
 
   const change = (fn) => commit(fn(structuredClone(r)));
   const isActive = activeRoutineId === r.id;
+  const plan = plannedVolume(r, exById);
+  const planWarnings = fatigueWarnings(plan.sets);
 
   const removeDay = async (di) => {
     const d = r.days[di];
@@ -113,6 +122,12 @@ export function RoutineEditor({ id }) {
             Usar esta rutina
           </button>
         </div>
+      )}
+
+      {planWarnings.some((w) => w.zone === "over") && (
+        <a href="#volumen-planificado" className="notice-link" onClick={(e) => { e.preventDefault(); document.getElementById("volumen-planificado")?.scrollIntoView({ behavior: "smooth" }); }}>
+          <FatigueNotice warnings={planWarnings} planned />
+        </a>
       )}
 
       {r.days.map((d, di) => (
@@ -233,6 +248,35 @@ export function RoutineEditor({ id }) {
       >
         <Icon name="plus" /> Agregar día
       </button>
+
+      <section className="panel" id="volumen-planificado">
+        <div className="section-head stack">
+          <h2>Volumen semanal planificado</h2>
+          <p>
+            Series por semana que suma esta rutina para cada músculo, comparadas con las referencias de volumen efectivo.{" "}
+            <Link to="/volumen">Ver la guía de volumen</Link>
+          </p>
+        </div>
+        <div className="field cycles-field">
+          <label htmlFor="rt-cycles">¿Cuántas veces por semana haces todos los días de la rutina?</label>
+          <select
+            id="rt-cycles"
+            className="select"
+            value={plan.cycles}
+            onChange={(e) => change((x) => ({ ...x, cyclesPerWeek: Number(e.target.value) }))}
+          >
+            {CYCLE_OPTIONS.map((c) => (
+              <option key={c} value={c}>
+                {c === 1 ? "1 vez" : `${fmtNum(c, 1).replace(".", ",")} veces`} ({fmtNum(c * r.days.length, 1).replace(".", ",")} entrenamientos por semana)
+              </option>
+            ))}
+          </select>
+          <span className="hint">Por ejemplo, Push / Pull / Legs en 6 días son 2 veces por semana.</span>
+        </div>
+        {planWarnings.length > 0 && <FatigueNotice warnings={planWarnings} planned />}
+        <VolumeBars sets={plan.sets} freq={plan.freq} mode="plan" onlyUsed />
+        {Object.keys(plan.sets).length === 0 && <p className="hint">Agrega ejercicios para ver el volumen de la rutina.</p>}
+      </section>
 
       <div className="btn-row editor-bottom">
         <button className="btn btn-primary" onClick={() => navigate("/entrenar")}>

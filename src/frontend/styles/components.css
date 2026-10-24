@@ -264,6 +264,8 @@ button.list-row:hover { background: var(--surface-2); }
 .badge svg { width: 14px; height: 14px; }
 .badge.success { background: var(--success-bg); color: var(--success); }
 .badge.warning { background: var(--warning-bg); color: var(--warning); }
+.badge.info { background: var(--zone-eff); color: var(--accent); }
+.badge.danger { background: var(--danger-bg); color: var(--danger); }
 
 .empty {
   text-align: center;
@@ -284,6 +286,10 @@ button.list-row:hover { background: var(--surface-2); }
 }
 .notice svg { width: 22px; height: 22px; color: var(--warning); flex-shrink: 0; }
 .notice .grow { flex: 1; min-width: 0; }
+.notice { align-items: flex-start; }
+.notice.notice-danger { background: var(--danger-bg); }
+.notice.notice-danger > svg { color: var(--danger); }
+.notice-link { display: block; color: inherit; text-decoration: none; }
 
 /* ---------- Disco (identidad del día) ---------- */
 .plate {

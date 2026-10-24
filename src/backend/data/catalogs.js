@@ -3,6 +3,7 @@
 export const MUSCLES = [
   { id: "pecho", label: "Pecho" },
   { id: "espalda", label: "Espalda" },
+  { id: "trapecio", label: "Trapecio" },
   { id: "hombros", label: "Hombros" },
   { id: "biceps", label: "Bíceps" },
   { id: "triceps", label: "Tríceps" },
@@ -43,6 +44,7 @@ export const PATTERN_BY_MUSCLE = {
   hombros: "empuje",
   triceps: "empuje",
   espalda: "tiron",
+  trapecio: "tiron",
   biceps: "tiron",
   cuadriceps: "pierna",
   isquios: "pierna",

@@ -11,7 +11,13 @@ Aplicación web para registrar entrenamientos de fuerza: eliges un modelo de rut
 - **Catálogo de 147 ejercicios:** 104 de la *Enciclopedia de Ejercicios* de Manuel Escalera, cada uno con su video de técnica, más 43 básicos que la enciclopedia no incluye (pecho, dominadas, sentadilla con barra, core…). También puedes crear los tuyos.
 - **Sobrecarga progresiva:** la app sugiere la meta de cada serie con *doble progresión*: si llegaste al tope del rango de repeticiones, sube el peso; si no, suma una repetición.
 - **Temporizador de descanso**, que arranca al marcar una serie como hecha.
-- **Progreso:** gráfico por ejercicio (peso máximo, 1RM estimado o volumen) con línea de tendencia, y series semanales por músculo.
+- **Progreso:** gráfico por ejercicio (peso máximo, 1RM estimado o volumen) con línea de tendencia.
+- **Volumen efectivo y sobrefatiga:** compara las series semanales de cada músculo con las referencias MV, MEV, MAV y MRV (Renaissance Periodization). Lo hace en tres lugares:
+  - en Progreso, con lo que hiciste en los últimos 7 días;
+  - en el editor de rutinas, con lo que planificaste;
+  - en Entrenar, avisándote si un músculo ya pasó su máximo recuperable esta semana.
+
+  La *Guía de volumen* muestra la tabla completa, con frecuencia, repeticiones y RIR recomendados.
 - **Historial**, exportación a **JSON** y **CSV**, e importación de respaldos.
 - **Modo claro y oscuro**, con contraste AA en ambos.
 
@@ -53,10 +59,12 @@ src/
 │   ├── domain/
 │   │   ├── progression.js Metas sugeridas, 1RM estimado, comparación de series
 │   │   ├── stats.js       Regresión lineal, series por músculo, resúmenes
+│   │   ├── volume.js      Zonas de volumen (MV/MEV/MAV/MRV) y avisos de sobrefatiga
 │   │   └── utils.js       Fechas, ids, normalización de nombres
 │   └── data/
 │       ├── exercises.json Catálogo de ejercicios (con links de video)
 │       ├── templates.js   Modelos de entrenamiento
+│       ├── volumeLandmarks.js  Tabla de referencia de volumen por músculo
 │       └── catalogs.js    Músculos, equipos y patrones de movimiento
 └── frontend/              ← "Frontend": interfaz en React
     ├── main.jsx           Punto de entrada

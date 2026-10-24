@@ -2,6 +2,9 @@
 // Son plantillas de solo lectura: cuando el usuario elige una, el backend crea
 // una copia editable en "Mis rutinas" (ver api/routines.js).
 //
+// cyclesPerWeek: cuántas veces por semana se completa el ciclo de días
+// (se usa para estimar el volumen semanal planificado).
+//
 // Formato de cada ejercicio: e(idDelCatalogo, series, rangoDeReps, opciones)
 //   opciones.alias -> nombre que se muestra en vez del nombre del catálogo
 //   opciones.note  -> indicación corta (superserie, al fallo, etc.)
@@ -11,6 +14,7 @@ const e = (exerciseId, sets, reps, opts = {}) => ({ exerciseId, sets, reps, ...o
 export const TEMPLATES = [
   {
     id: "ppl",
+    cyclesPerWeek: 1,
     name: "Push / Pull / Legs",
     daysPerWeek: "3 o 6 días",
     level: "Intermedio",
@@ -59,6 +63,7 @@ export const TEMPLATES = [
   },
   {
     id: "upper-lower",
+    cyclesPerWeek: 1,
     name: "Upper / Lower",
     daysPerWeek: "4 días",
     level: "Principiante a intermedio",
@@ -120,6 +125,7 @@ export const TEMPLATES = [
   },
   {
     id: "heavy-duty",
+    cyclesPerWeek: 0.5,
     name: "Heavy Duty",
     daysPerWeek: "3 días rotativos",
     level: "Avanzado",
@@ -164,6 +170,7 @@ export const TEMPLATES = [
   },
   {
     id: "full-body",
+    cyclesPerWeek: 1,
     name: "Full Body",
     daysPerWeek: "3 días",
     level: "Principiante",
@@ -212,6 +219,7 @@ export const TEMPLATES = [
   },
   {
     id: "arnold",
+    cyclesPerWeek: 2,
     name: "Arnold Split",
     daysPerWeek: "6 días",
     level: "Avanzado",
@@ -261,6 +269,7 @@ export const TEMPLATES = [
   },
   {
     id: "weider",
+    cyclesPerWeek: 1,
     name: "Weider (un músculo por día)",
     daysPerWeek: "5 días",
     level: "Intermedio",
@@ -282,7 +291,7 @@ export const TEMPLATES = [
       },
       {
         name: "Espalda",
-        focus: ["espalda"],
+        focus: ["espalda", "trapecio"],
         exercises: [
           e("dominadas", 4, "6-10"),
           e("remo-con-barra", 4, "8-10"),
@@ -331,6 +340,7 @@ export const TEMPLATES = [
   },
   {
     id: "crasher-ppal",
+    cyclesPerWeek: 1,
     name: "Push / Pull / Arm / Leg",
     daysPerWeek: "4 días",
     level: "Intermedio",
@@ -355,7 +365,7 @@ export const TEMPLATES = [
       },
       {
         name: "Pull",
-        focus: ["espalda", "biceps", "hombros"],
+        focus: ["espalda", "trapecio", "biceps", "hombros"],
         exercises: [
           e("jalon-al-pecho-agarre-neutro", 3, "8-12", { alias: "Jalón unilateral (derecho)" }),
           e("jalon-al-pecho-agarre-neutro", 3, "8-12", { alias: "Jalón unilateral (izquierdo)" }),

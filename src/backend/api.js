@@ -145,6 +145,7 @@ function routineFromTemplate(t) {
     templateId: t.id,
     description: t.description,
     schedule: t.schedule,
+    cyclesPerWeek: t.cyclesPerWeek || 1,
     createdAt: Date.now(),
     updatedAt: Date.now(),
     days: t.days.map((d) => ({
@@ -159,6 +160,8 @@ function routineFromTemplate(t) {
 function validateRoutine(r) {
   if (!String(r.name || "").trim()) throw new Error("La rutina necesita un nombre.");
   if (!r.days?.length) throw new Error("La rutina necesita al menos un día.");
+  const c = Number(r.cyclesPerWeek);
+  r.cyclesPerWeek = Number.isFinite(c) && c > 0 ? Math.min(c, 7) : 1;
   r.days.forEach((d, i) => {
     if (!String(d.name || "").trim()) d.name = `Día ${i + 1}`;
     d.exercises = (d.exercises || []).map((it) => ({
@@ -209,6 +212,7 @@ const routines = {
       name,
       templateId: null,
       description: "",
+      cyclesPerWeek: 1,
       createdAt: Date.now(),
       updatedAt: Date.now(),
       days: [{ id: uid("day"), name: "Día 1", focus: [], exercises: [] }],

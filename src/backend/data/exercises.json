@@ -1383,7 +1383,7 @@
  {
   "id": "encogimientos-con-mancuernas",
   "name": "Encogimientos con mancuernas",
-  "muscle": "espalda",
+  "muscle": "trapecio",
   "pattern": "tiron",
   "equipment": "mancuernas",
   "home": false,
@@ -1394,7 +1394,7 @@
  {
   "id": "encogimientos-con-barra",
   "name": "Encogimientos con barra",
-  "muscle": "espalda",
+  "muscle": "trapecio",
   "pattern": "tiron",
   "equipment": "barra",
   "home": false,

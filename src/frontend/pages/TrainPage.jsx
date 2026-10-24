@@ -8,9 +8,11 @@ import { TemplateGallery } from "../components/TemplateGallery.jsx";
 import { Icon } from "../icons.jsx";
 import { MUSCLE_LABEL } from "../../backend/data/catalogs.js";
 import { relDay, plural } from "../format.js";
+import { FatigueNotice } from "../components/FatigueNotice.jsx";
+import { weeklyVolume, fatigueWarnings } from "../../backend/domain/volume.js";
 
 export function TrainPage() {
-  const { routines, activeRoutineId, sessions, draft, api, run } = useData();
+  const { routines, activeRoutineId, sessions, draft, exById, api, run } = useData();
   const routine = routines.find((r) => r.id === activeRoutineId);
 
   const lastByDay = useMemo(() => {
@@ -31,6 +33,10 @@ export function TrainPage() {
     const idx = routine.days.findIndex((d) => d.id === entries[0].dayId);
     return routine.days[(idx + 1) % routine.days.length].id;
   }, [lastByDay, routine]);
+
+  // Volumen de los últimos 7 días, para avisar de sobrefatiga
+  const warnings = useMemo(() => fatigueWarnings(weeklyVolume(sessions, exById, 7).sets), [sessions, exById]);
+  const overMuscles = new Set(warnings.filter((w) => w.zone === "over").map((w) => w.muscle));
 
   if (!routines.length) {
     return (
@@ -64,6 +70,12 @@ export function TrainPage() {
           <button className="btn btn-sm btn-primary" onClick={() => navigate(`/entrenar/${draft.routineId}/${draft.dayId}`)}>
             Continuar
           </button>
+        </div>
+      )}
+
+      {warnings.length > 0 && (
+        <div className="section">
+          <FatigueNotice warnings={warnings} showLink />
         </div>
       )}
 
@@ -107,6 +119,7 @@ export function TrainPage() {
             {routine.days.map((d, i) => {
               const last = lastByDay[d.id];
               const isNext = d.id === nextDayId;
+              const tired = [...new Set(d.exercises.map((it) => exById.get(it.exerciseId)?.muscle))].filter((m) => overMuscles.has(m));
               return (
                 <button key={d.id} className={`day-card ${isNext ? "is-next" : ""}`} onClick={() => navigate(`/entrenar/${routine.id}/${d.id}`)}>
                   <Plate index={i} size={44} />
@@ -116,6 +129,11 @@ export function TrainPage() {
                     <span className="day-meta">
                       {plural(d.exercises.length, "ejercicio", "ejercicios")} · {last ? `última vez ${relDay(last.date)}` : "aún sin registros"}
                     </span>
+                    {tired.length > 0 && (
+                      <span className="day-warn">
+                        <Icon name="alert" /> {tired.map((m) => MUSCLE_LABEL[m]).join(", ")} ya {tired.length > 1 ? "pasaron su" : "pasó su"} máximo esta semana
+                      </span>
+                    )}
                   </span>
                   {isNext && <span className="badge success">Te toca</span>}
                   <Icon name="right" className="day-arrow" />

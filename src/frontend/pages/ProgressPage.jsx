@@ -4,12 +4,14 @@ import { useMemo, useState } from "react";
 import { useData } from "../store.jsx";
 import { Link } from "../router.jsx";
 import { LineChart } from "../components/LineChart.jsx";
-import { MUSCLES } from "../../backend/data/catalogs.js";
-import { METRICS, exerciseSeries, linearRegression, loggedExercises, setsByMuscle, summary } from "../../backend/domain/stats.js";
+import { VolumeBars } from "../components/VolumeBars.jsx";
+import { FatigueNotice } from "../components/FatigueNotice.jsx";
+import { weeklyVolume, fatigueWarnings } from "../../backend/domain/volume.js";
+import { METRICS, exerciseSeries, linearRegression, loggedExercises, summary } from "../../backend/domain/stats.js";
 import { fmtTonnage, fmtNum, fmtDate, relDay } from "../format.js";
 
 export function ProgressPage() {
-  const { sessions } = useData();
+  const { sessions, exById } = useData();
   const list = useMemo(() => loggedExercises(sessions), [sessions]);
   const [exName, setExName] = useState(null);
   const [metric, setMetric] = useState("maxWeight");
@@ -17,7 +19,8 @@ export function ProgressPage() {
   const current = exName && list.some((e) => e.name === exName) ? exName : list[0]?.name;
 
   const sum = useMemo(() => summary(sessions), [sessions]);
-  const weekly = useMemo(() => setsByMuscle(sessions, 7), [sessions]);
+  const weekly = useMemo(() => weeklyVolume(sessions, exById, 7), [sessions, exById]);
+  const warnings = useMemo(() => fatigueWarnings(weekly.sets), [weekly]);
   const points = useMemo(() => (current ? exerciseSeries(sessions, current, metric) : []), [sessions, current, metric]);
   const trend = useMemo(() => linearRegression(points), [points]);
   const metricInfo = METRICS.find((m) => m.id === metric);
@@ -38,7 +41,6 @@ export function ProgressPage() {
   const prev = points.length > 1 ? points[points.length - 2].y : null;
   const best = points.length ? Math.max(...points.map((p) => p.y)) : 0;
   const diff = prev === null ? null : Math.round((last - prev) * 10) / 10;
-  const maxWeekly = Math.max(20, ...Object.values(weekly));
 
   return (
     <>
@@ -150,26 +152,14 @@ export function ProgressPage() {
 
       <section className="section panel">
         <div className="section-head stack">
-          <h2>Series por músculo, últimos 7 días</h2>
-          <p>La zona verde marca el rango que suele recomendarse para ganar músculo: entre 10 y 20 series por semana.</p>
+          <h2>Volumen semanal por músculo</h2>
+          <p>
+            Series de los últimos 7 días comparadas con las referencias de volumen efectivo. Pasar el máximo recuperable
+            acumula fatiga. <Link to="/volumen">Ver la guía de volumen</Link>
+          </p>
         </div>
-        <div className="bars" role="list">
-          {MUSCLES.map((m) => {
-            const v = weekly[m.id] || 0;
-            const status = v === 0 ? "" : v < 10 ? "Bajo el rango" : v > 20 ? "Sobre el rango" : "En rango";
-            return (
-              <div key={m.id} className="bar-row" role="listitem">
-                <span className="bar-label">{m.label}</span>
-                <span className="bar-track">
-                  <span className="bar-band" style={{ left: `${(10 / maxWeekly) * 100}%`, width: `${(10 / maxWeekly) * 100}%` }} />
-                  {v > 0 && <span className="bar-fill" style={{ width: `${(v / maxWeekly) * 100}%` }} />}
-                </span>
-                <span className="bar-value num">{v}</span>
-                <span className="visually-hidden">{status}</span>
-              </div>
-            );
-          })}
-        </div>
+        {warnings.length > 0 && <FatigueNotice warnings={warnings} />}
+        <VolumeBars sets={weekly.sets} freq={weekly.freq} mode="week" />
       </section>
 
       <section className="section">

@@ -9,6 +9,7 @@ import { Sheet } from "../components/Sheet.jsx";
 import { ExercisePicker } from "../components/ExercisePicker.jsx";
 import { techniqueUrl } from "../components/ExerciseBrowser.jsx";
 import { MUSCLE_LABEL } from "../../backend/data/catalogs.js";
+import { LANDMARKS } from "../../backend/data/volumeLandmarks.js";
 import { lastPerformance, suggestTarget, compareSet } from "../../backend/domain/progression.js";
 import { todayISO, uid } from "../../backend/domain/utils.js";
 import { relDay, fmtNum, plural } from "../format.js";
@@ -423,8 +424,8 @@ function ExerciseBlock({ ex, sessions, settings, exInfo, onChange, onMenu, onSet
                   min="0"
                   max="10"
                   step="0.5"
-                  aria-label={`RIR serie ${i + 1}`}
-                  placeholder="–"
+                  aria-label={`RIR serie ${i + 1}${LANDMARKS[ex.muscle] ? `, recomendado ${LANDMARKS[ex.muscle].rir}` : ""}`}
+                  placeholder={LANDMARKS[ex.muscle]?.rir || "–"}
                   value={s.rir}
                   onChange={(e) => setField(i, "rir", e.target.value)}
                 />
